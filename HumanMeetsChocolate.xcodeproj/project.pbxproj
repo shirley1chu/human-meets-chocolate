@@ -12,16 +12,18 @@
 		719673A922D50E0300917428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719673A722D50E0300917428 /* Main.storyboard */; };
 		719673AB22D50E0400917428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719673AA22D50E0400917428 /* Assets.xcassets */; };
 		719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719673AC22D50E0400917428 /* LaunchScreen.storyboard */; };
+		719673B622D50E5200917428 /* chocolate_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 719673B522D50E5100917428 /* chocolate_data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		719673A022D50E0200917428 /* Human Meets Chocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Human Meets Chocolate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		719673A022D50E0200917428 /* HumanMeetsChocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanMeetsChocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719673A322D50E0200917428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719673A522D50E0200917428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		719673A822D50E0300917428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		719673AA22D50E0400917428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		719673AD22D50E0400917428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		719673AF22D50E0400917428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719673B522D50E5100917428 /* chocolate_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chocolate_data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 		719673A122D50E0200917428 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				719673A022D50E0200917428 /* Human Meets Chocolate.app */,
+				719673A022D50E0200917428 /* HumanMeetsChocolate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +59,7 @@
 				719673A322D50E0200917428 /* AppDelegate.swift */,
 				719673A522D50E0200917428 /* ViewController.swift */,
 				719673A722D50E0300917428 /* Main.storyboard */,
+				719673B522D50E5100917428 /* chocolate_data.json */,
 				719673AA22D50E0400917428 /* Assets.xcassets */,
 				719673AC22D50E0400917428 /* LaunchScreen.storyboard */,
 				719673AF22D50E0400917428 /* Info.plist */,
@@ -67,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7196739F22D50E0200917428 /* Human Meets Chocolate */ = {
+		7196739F22D50E0200917428 /* HumanMeetsChocolate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 719673B222D50E0400917428 /* Build configuration list for PBXNativeTarget "Human Meets Chocolate" */;
+			buildConfigurationList = 719673B222D50E0400917428 /* Build configuration list for PBXNativeTarget "HumanMeetsChocolate" */;
 			buildPhases = (
 				7196739C22D50E0200917428 /* Sources */,
 				7196739D22D50E0200917428 /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "Human Meets Chocolate";
+			name = HumanMeetsChocolate;
 			productName = "Human Meets Chocolate";
-			productReference = 719673A022D50E0200917428 /* Human Meets Chocolate.app */;
+			productReference = 719673A022D50E0200917428 /* HumanMeetsChocolate.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7196739B22D50E0200917428 /* Build configuration list for PBXProject "Human Meets Chocolate" */;
+			buildConfigurationList = 7196739B22D50E0200917428 /* Build configuration list for PBXProject "HumanMeetsChocolate" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7196739F22D50E0200917428 /* Human Meets Chocolate */,
+				7196739F22D50E0200917428 /* HumanMeetsChocolate */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +127,7 @@
 			files = (
 				719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */,
 				719673AB22D50E0400917428 /* Assets.xcassets in Resources */,
+				719673B622D50E5200917428 /* chocolate_data.json in Resources */,
 				719673A922D50E0300917428 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7196739B22D50E0200917428 /* Build configuration list for PBXProject "Human Meets Chocolate" */ = {
+		7196739B22D50E0200917428 /* Build configuration list for PBXProject "HumanMeetsChocolate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				719673B022D50E0400917428 /* Debug */,
@@ -324,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		719673B222D50E0400917428 /* Build configuration list for PBXNativeTarget "Human Meets Chocolate" */ = {
+		719673B222D50E0400917428 /* Build configuration list for PBXNativeTarget "HumanMeetsChocolate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				719673B322D50E0400917428 /* Debug */,
