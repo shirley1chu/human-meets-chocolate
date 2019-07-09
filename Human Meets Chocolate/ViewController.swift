@@ -18,6 +18,7 @@ class ViewController: UIViewController {
 
                 textView.text = json[1]["About"] as? String
                 }
+        print("hello world!")
     }
     
     static func readJSONFromFile(fileName: String) -> Any?
