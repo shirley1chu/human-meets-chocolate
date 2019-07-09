@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		719673AB22D50E0400917428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719673AA22D50E0400917428 /* Assets.xcassets */; };
 		719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719673AC22D50E0400917428 /* LaunchScreen.storyboard */; };
 		719673B622D50E5200917428 /* chocolate_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 719673B522D50E5100917428 /* chocolate_data.json */; };
+		719673BA22D53D8700917428 /* KolodaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719673B922D53D8700917428 /* KolodaViewController.swift */; };
+		A3D879EDDCE03EFF7FAE73CD /* Pods_HumanMeetsChocolate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15F1493047D0E2186F592FC8 /* Pods-HumanMeetsChocolate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanMeetsChocolate.debug.xcconfig"; path = "Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate.debug.xcconfig"; sourceTree = "<group>"; };
+		51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanMeetsChocolate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		719673A022D50E0200917428 /* HumanMeetsChocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanMeetsChocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719673A322D50E0200917428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719673A522D50E0200917428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		719673AD22D50E0400917428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		719673AF22D50E0400917428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		719673B522D50E5100917428 /* chocolate_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chocolate_data.json; sourceTree = "<group>"; };
+		719673B922D53D8700917428 /* KolodaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KolodaViewController.swift; sourceTree = "<group>"; };
+		B3B61E6BCA2A40286ECDE7D6 /* Pods-HumanMeetsChocolate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanMeetsChocolate.release.xcconfig"; path = "Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D879EDDCE03EFF7FAE73CD /* Pods_HumanMeetsChocolate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00F2C04C8E5611BC4D8E4D90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15F1493047D0E2186F592FC8 /* Pods-HumanMeetsChocolate.debug.xcconfig */,
+				B3B61E6BCA2A40286ECDE7D6 /* Pods-HumanMeetsChocolate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7196739722D50E0200917428 = {
 			isa = PBXGroup;
 			children = (
 				719673A222D50E0200917428 /* Human Meets Chocolate */,
 				719673A122D50E0200917428 /* Products */,
+				00F2C04C8E5611BC4D8E4D90 /* Pods */,
+				BA620B2CFED651916A5DE613 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,7 @@
 		719673A222D50E0200917428 /* Human Meets Chocolate */ = {
 			isa = PBXGroup;
 			children = (
+				719673B922D53D8700917428 /* KolodaViewController.swift */,
 				719673A322D50E0200917428 /* AppDelegate.swift */,
 				719673A522D50E0200917428 /* ViewController.swift */,
 				719673A722D50E0300917428 /* Main.storyboard */,
@@ -67,6 +86,14 @@
 			path = "Human Meets Chocolate";
 			sourceTree = "<group>";
 		};
+		BA620B2CFED651916A5DE613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 719673B222D50E0400917428 /* Build configuration list for PBXNativeTarget "HumanMeetsChocolate" */;
 			buildPhases = (
+				664A4720C885DC0B7E443505 /* [CP] Check Pods Manifest.lock */,
 				7196739C22D50E0200917428 /* Sources */,
 				7196739D22D50E0200917428 /* Frameworks */,
 				7196739E22D50E0200917428 /* Resources */,
+				E6B43D7590F965C2360DDC47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,11 +163,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		664A4720C885DC0B7E443505 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HumanMeetsChocolate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6B43D7590F965C2360DDC47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7196739C22D50E0200917428 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719673BA22D53D8700917428 /* KolodaViewController.swift in Sources */,
 				719673A622D50E0200917428 /* ViewController.swift in Sources */,
 				719673A422D50E0200917428 /* AppDelegate.swift in Sources */,
 			);
@@ -284,6 +356,7 @@
 		};
 		719673B322D50E0400917428 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F1493047D0E2186F592FC8 /* Pods-HumanMeetsChocolate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +374,7 @@
 		};
 		719673B422D50E0400917428 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B61E6BCA2A40286ECDE7D6 /* Pods-HumanMeetsChocolate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

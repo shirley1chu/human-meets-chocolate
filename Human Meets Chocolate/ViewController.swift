@@ -8,17 +8,21 @@
 
 import UIKit
 import Foundation
+import Koloda
 
 class ViewController: UIViewController {
+    
+
+  
     
     @IBOutlet var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-                if let json = ViewController.readJSONFromFile(fileName: "chocolate_data") as? [NSDictionary] {
-
-                textView.text = json[1]["About"] as? String
-                }
-        print("hello world!")
+//                if let json = ViewController.readJSONFromFile(fileName: "chocolate_data") as? [NSDictionary] {
+//
+//                textView.text = json[1]["About"] as? String
+//                }
+        
     }
     
     static func readJSONFromFile(fileName: String) -> Any?
