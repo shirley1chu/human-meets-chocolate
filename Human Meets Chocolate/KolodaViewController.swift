@@ -13,36 +13,74 @@ class KolodaViewController: UIViewController {
 
     @IBOutlet var kolodaView: KolodaView!
     
+    private let numberOfCards = 2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        provides view to populate koloda view
         kolodaView.dataSource = self
+        
+//        responds to kolodaview events
         kolodaView.delegate = self
     }
     
 }
 
 extension KolodaViewController: KolodaViewDelegate {
+    
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        koloda.reloadData()
+        koloda.resetCurrentCardIndex()
+//        show 'recommendations empty' page
+//        might need to use segue 
     }
     
+    
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
-        let alert = UIAlertController(title: "Congratulation!", message: "Now you're at a card)", preferredStyle: .alert)
+        //        delete all the crap below and add segue, loads show page
+        let alert = UIAlertController(title: "Congratulations!", message: "Now you're at a card \(index + 1)", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         self.present(alert, animated: true)
     }
+    
+//    func swipeLeft() {
+////        delete from recommendations
+//    }
+//
+//    func swipeRight () {
+////        add to matches class
+//    }
 }
+
 extension KolodaViewController: KolodaViewDataSource {
+    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+//        var i = 1
+        let photoView = Bundle.main.loadNibNamed("ChocolateCard",
+                                                 owner: self, options: nil)?[0] as? ChocolateCard
+        photoView?.imageView?.image = UIImage(named: "\(index + 1)")
+        photoView?.name?.text = "mokaa"
+//        i += 1
+        return photoView!
+    }
+    
+    
     
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
-        return 1
+        return numberOfCards
     }
     
-    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        let view = UIImageView(image: UIImage(named: "1"))
-        view.layer.cornerRadius = 20
-        view.clipsToBounds = true
-        return view
-    }
+    
+    
+//    func kolodaViewForCardAtIndex(koloda: KolodaView, index: UInt) -> UIView {
+//        let photoView = NSBundle.mainBundle().loadNibNamed("KolodaPhotoView",
+//                                                           owner: self, options: nil)[0] as? KolodaPhotoView
+//        let photo = photos[Int(index)]
+//        photoView?.photoImageView?.imageFromUrl(photo.photoUrlString)
+//        photoView?.photoTitleLabel?.text = photo.title
+//        return photoView!
+//    }
+
+    
+    
+
 }

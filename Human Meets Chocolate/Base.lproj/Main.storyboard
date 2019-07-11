@@ -17,21 +17,10 @@
                     <view key="view" contentMode="scaleToFill" id="hVj-fD-UT6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kmf-wj-KD2" customClass="KoladaView" customModule="Kolada">
-                                <rect key="frame" x="39" y="165" width="334" height="309"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Gwz-dT-wGV"/>
                     </view>
                     <navigationItem key="navigationItem" id="ONp-vU-BUV"/>
-                    <connections>
-                        <outlet property="koladaView" destination="Kmf-wj-KD2" id="dJ9-u9-wDf"/>
-                        <outlet property="kolodaView" destination="Kmf-wj-KD2" id="2jP-wK-X39"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,21 +35,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTn-gS-FCc" customClass="KolodaView" customModule="Koloda">
-                                <rect key="frame" x="40" y="128" width="334" height="309"/>
+                                <rect key="frame" x="20" y="102" width="374" height="520"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.94438147670000006" green="0.53458307000000005" blue="0.59542773159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2Rs-95-Ru5"/>
                     </view>
                     <connections>
-                        <outlet property="kolodaView" destination="hTn-gS-FCc" id="f4R-6Y-ony"/>
+                        <outlet property="kolodaView" destination="hTn-gS-FCc" id="aQO-aY-ZlF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZg-Zb-nXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646" y="-591"/>
+            <point key="canvasLocation" x="1644.9275362318842" y="-591.29464285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Thr-sj-kOG">
