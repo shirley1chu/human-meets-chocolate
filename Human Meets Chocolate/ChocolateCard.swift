@@ -10,8 +10,18 @@ import UIKit
 
 class ChocolateCard: UIView {
 
-    @IBOutlet var imageView: UIImageView!
-  
-    @IBOutlet var name: UILabel!
+
+    @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var brand: UILabel!
+    @IBOutlet weak var flavor: UILabel!
+    @IBOutlet weak var type: UILabel!
+    
+    var chocolate: Chocolate! {
+        didSet{
+            brand.text = chocolate.brand
+            flavor.text = chocolate.flavor
+            type.text = chocolate.type
+        }
+    }
 }

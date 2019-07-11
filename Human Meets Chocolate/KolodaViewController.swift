@@ -57,12 +57,16 @@ extension KolodaViewController: KolodaViewDelegate {
 
 extension KolodaViewController: KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-//        var i = 1
         let photoView = Bundle.main.loadNibNamed("ChocolateCard",
                                                  owner: self, options: nil)?[0] as? ChocolateCard
+        let chocolate = chocolates[index]
+        
         photoView?.imageView?.image = UIImage(named: "\(index + 1)")
-        photoView?.name?.text = "mokaa"
-//        i += 1
+        photoView?.chocolate = chocolate
+//        photoView?.brand.text = chocolate.brand
+//        photoView?.flavor.text = chocolate.flavor
+//        photoView?.type.text = chocolate.type
+        
         return photoView!
     }
     
