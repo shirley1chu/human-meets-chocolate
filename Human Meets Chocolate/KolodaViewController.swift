@@ -13,11 +13,14 @@ class KolodaViewController: UIViewController {
 
     @IBOutlet var kolodaView: KolodaView!
     
-    private let numberOfCards = 2
+    let chocolates = chocolateCollection().chocolates
+    
+    private let numberOfCards = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(chocolates)
 //        provides view to populate koloda view
         kolodaView.dataSource = self
         

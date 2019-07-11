@@ -8,41 +8,32 @@
 
 import Foundation
 
-class Chocolate {
+class chocolateCollection {
     
-//
-//    var type: String?
-//    var flavor: String?
-//    var brand: String?
-//    var notes: String?
-//    var about: String?
-//    var target_user: String?
-//    var price_point: String?
-//    var special_features: String?
-//
-//
-//
-//    var chocolates: [Chocolate]?
-//
-//    if let json = ViewController.readJSONFromFile(fileName: "chocolate_data") as! [NSDictionary] {
-//        chocolates =
-//
-//                    }
-//
-//    static func readJSONFromFile(fileName: String) -> Any?
-//    {
-//        var json: Any?
-//        if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
-//            do {
-//                let fileUrl = URL(fileURLWithPath: path)
-//                // Getting data from JSON file using the file URL
-//                let data = try Data(contentsOf: fileUrl, options: .mappedIfSafe)
-//                json = try? JSONSerialization.jsonObject(with: data)
-//            } catch {
-//                // Handle error here
-//            }
-//        }
-//        return json
-//    }
+    var chocolates: [Chocolate] = []
+    
+    init () {
+        self.chocolates = makeChocolates()
+    }
+    
 }
 
+extension chocolateCollection {
+    
+    func makeChocolates () -> [Chocolate] {
+        var chocolates: [Chocolate] = []
+        
+        let path = Bundle.main.url(forResource: "chocolate_data", withExtension: "json")
+        let chocolateData = try? Data(contentsOf: path!)
+        
+        
+            let jsonDecoder = JSONDecoder()
+            do {
+                chocolates = try jsonDecoder.decode([Chocolate].self, from: chocolateData!)
+            }
+            catch {
+                print("failed to load chocolates")
+            }
+        return chocolates
+    }
+}
