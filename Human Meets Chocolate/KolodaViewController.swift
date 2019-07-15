@@ -28,7 +28,23 @@ class KolodaViewController: UIViewController {
         kolodaView.delegate = self
     }
     
+    //MARK: IBActions
+//    @IBAction func leftButtonTapped() {
+//        kolodaView?.swipe(SwipeResultDirection.Left)
+//        kolodaView?.swipeLeft()
+//    }
+    
+//    @IBAction func rightButtonTapped() {
+//        swipeRight()
+//    }
+//
+//    @IBAction func undoButtonTapped() {
+//        kolodaView?.revertAction()
+//    }
+    
 }
+
+
 
 extension KolodaViewController: KolodaViewDelegate {
     
@@ -41,17 +57,25 @@ extension KolodaViewController: KolodaViewDelegate {
     
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
         //        delete all the crap below and add segue, loads show page
-        let alert = UIAlertController(title: "Congratulations!", message: "Now you're at a card \(index + 1)", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        self.present(alert, animated: true)
+        
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            vc.imagetoLoad = UIImage(named: "\(index + 1)")
+            vc.chocolate = chocolates[index]
+            navigationController?.pushViewController(vc, animated: true)
+        }
+            
+            
+//        let alert = UIAlertController(title: "Congratulations!", message: "Now you're at a card \(index + 1)", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "OK", style: .default))
+//        self.present(alert, animated: true)
     }
     
-//    func swipeLeft() {
-////        delete from recommendations
+//    func swipeLeft() { 
+//        print("left swipe")
 //    }
-//
+////
 //    func swipeRight () {
-////        add to matches class
+//        print("right swipe")
 //    }
 }
 
@@ -63,10 +87,6 @@ extension KolodaViewController: KolodaViewDataSource {
         
         photoView?.imageView?.image = UIImage(named: "\(index + 1)")
         photoView?.chocolate = chocolate
-//        photoView?.brand.text = chocolate.brand
-//        photoView?.flavor.text = chocolate.flavor
-//        photoView?.type.text = chocolate.type
-        
         return photoView!
     }
     
@@ -75,18 +95,6 @@ extension KolodaViewController: KolodaViewDataSource {
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
         return numberOfCards
     }
-    
-    
-    
-//    func kolodaViewForCardAtIndex(koloda: KolodaView, index: UInt) -> UIView {
-//        let photoView = NSBundle.mainBundle().loadNibNamed("KolodaPhotoView",
-//                                                           owner: self, options: nil)[0] as? KolodaPhotoView
-//        let photo = photos[Int(index)]
-//        photoView?.photoImageView?.imageFromUrl(photo.photoUrlString)
-//        photoView?.photoTitleLabel?.text = photo.title
-//        return photoView!
-//    }
-
     
     
 

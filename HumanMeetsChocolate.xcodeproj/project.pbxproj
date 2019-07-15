@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711C5ED622DD0468005F9EA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C5ED522DD0468005F9EA4 /* DetailViewController.swift */; };
+		7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */; };
+		7135BCDE22DAD6910020BABC /* ChocolateDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */; };
 		719673A422D50E0200917428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719673A322D50E0200917428 /* AppDelegate.swift */; };
 		719673A622D50E0200917428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719673A522D50E0200917428 /* ViewController.swift */; };
 		719673A922D50E0300917428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719673A722D50E0300917428 /* Main.storyboard */; };
@@ -14,12 +17,19 @@
 		719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719673AC22D50E0400917428 /* LaunchScreen.storyboard */; };
 		719673B622D50E5200917428 /* chocolate_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 719673B522D50E5100917428 /* chocolate_data.json */; };
 		719673BA22D53D8700917428 /* KolodaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719673B922D53D8700917428 /* KolodaViewController.swift */; };
+		71AC1DBD22D7FA200077311A /* ChocolateCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */; };
+		71AC1DBF22D7FA970077311A /* Chocolates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DBE22D7FA970077311A /* Chocolates.swift */; };
+		71AC1DC122D7FAA00077311A /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DC022D7FA9F0077311A /* Chocolate.swift */; };
+		71AC1DC322D7FB030077311A /* ChocolateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DC222D7FB030077311A /* ChocolateCard.swift */; };
 		A3D879EDDCE03EFF7FAE73CD /* Pods_HumanMeetsChocolate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15F1493047D0E2186F592FC8 /* Pods-HumanMeetsChocolate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanMeetsChocolate.debug.xcconfig"; path = "Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate.debug.xcconfig"; sourceTree = "<group>"; };
 		51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanMeetsChocolate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		711C5ED522DD0468005F9EA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "/Users/shirleychu/Documents/Capstone/Human Meets Chocolate/Human Meets Chocolate/DetailViewController.swift"; sourceTree = "<absolute>"; };
+		7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChocolateDetailPage.xib; sourceTree = "<group>"; };
+		7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateDetailPage.swift; sourceTree = "<group>"; };
 		719673A022D50E0200917428 /* HumanMeetsChocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanMeetsChocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719673A322D50E0200917428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719673A522D50E0200917428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +39,10 @@
 		719673AF22D50E0400917428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		719673B522D50E5100917428 /* chocolate_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chocolate_data.json; sourceTree = "<group>"; };
 		719673B922D53D8700917428 /* KolodaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KolodaViewController.swift; sourceTree = "<group>"; };
+		71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChocolateCard.xib; sourceTree = "<group>"; };
+		71AC1DBE22D7FA970077311A /* Chocolates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolates.swift; sourceTree = "<group>"; };
+		71AC1DC022D7FA9F0077311A /* Chocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
+		71AC1DC222D7FB030077311A /* ChocolateCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateCard.swift; sourceTree = "<group>"; };
 		B3B61E6BCA2A40286ECDE7D6 /* Pods-HumanMeetsChocolate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanMeetsChocolate.release.xcconfig"; path = "Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,10 +89,17 @@
 			isa = PBXGroup;
 			children = (
 				719673B922D53D8700917428 /* KolodaViewController.swift */,
+				711C5ED522DD0468005F9EA4 /* DetailViewController.swift */,
 				719673A322D50E0200917428 /* AppDelegate.swift */,
 				719673A522D50E0200917428 /* ViewController.swift */,
 				719673A722D50E0300917428 /* Main.storyboard */,
+				71AC1DBE22D7FA970077311A /* Chocolates.swift */,
 				719673B522D50E5100917428 /* chocolate_data.json */,
+				71AC1DC222D7FB030077311A /* ChocolateCard.swift */,
+				71AC1DC022D7FA9F0077311A /* Chocolate.swift */,
+				71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */,
+				7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */,
+				7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */,
 				719673AA22D50E0400917428 /* Assets.xcassets */,
 				719673AC22D50E0400917428 /* LaunchScreen.storyboard */,
 				719673AF22D50E0400917428 /* Info.plist */,
@@ -156,8 +177,10 @@
 			files = (
 				719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */,
 				719673AB22D50E0400917428 /* Assets.xcassets in Resources */,
+				7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */,
 				719673B622D50E5200917428 /* chocolate_data.json in Resources */,
 				719673A922D50E0300917428 /* Main.storyboard in Resources */,
+				71AC1DBD22D7FA200077311A /* ChocolateCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,9 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71AC1DBF22D7FA970077311A /* Chocolates.swift in Sources */,
+				71AC1DC122D7FAA00077311A /* Chocolate.swift in Sources */,
+				71AC1DC322D7FB030077311A /* ChocolateCard.swift in Sources */,
 				719673BA22D53D8700917428 /* KolodaViewController.swift in Sources */,
 				719673A622D50E0200917428 /* ViewController.swift in Sources */,
 				719673A422D50E0200917428 /* AppDelegate.swift in Sources */,
+				7135BCDE22DAD6910020BABC /* ChocolateDetailPage.swift in Sources */,
+				711C5ED622DD0468005F9EA4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
