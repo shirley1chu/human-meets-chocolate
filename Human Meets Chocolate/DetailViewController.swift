@@ -22,6 +22,7 @@ class DetailViewController: UIViewController {
     var imagetoLoad: UIImage?
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
@@ -32,8 +33,19 @@ class DetailViewController: UIViewController {
         about.text = "I am...\n \(chocolate.about ?? ""))"
         about.sizeToFit()
         interests.text = "I like...\n \("Long walks on the beach")"
+        interests.sizeToFit()
         idealMatch.text = "My ideal match is... \n \(chocolate.targetUser ?? "A lovely soul")"
+        idealMatch.sizeToFit()
+        
+        let nav = self.navigationController!.navigationBar
+//        nav.backBarButtonItem?.title = "Hello world"
+        nav.barStyle = .black
+        self.title = "Profile"
         }
+    
+
+    
+    
     }
 
 
