@@ -23,30 +23,38 @@ class DetailViewController: UIViewController {
     var chocolate: Chocolate!
     var imagetoLoad: UIImage?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         imageView.image = imagetoLoad
         imageView.layer.cornerRadius = 8
-        brand.text = "Brand: \(chocolate.brand!)"
-        flavor.text = "Flavor: \(chocolate.flavor!)"
-        type.text = "Type: \(chocolate.type!)"
-        about.text = "I am...\n\(chocolate.about ?? ""))"
+        brand.attributedText = varyBoldText(boldText: "Brand: ", regularText: "\(chocolate.brand!)")
+        flavor.attributedText = varyBoldText(boldText: "Flavor: ", regularText: "\(chocolate.flavor!)")
+        type.attributedText = varyBoldText(boldText: "Type: ", regularText: "\(chocolate.type!)")
+        about.attributedText = varyBoldText(boldText: "I am...\n", regularText: "\(chocolate.about ?? "")")
         about.sizeToFit()
-        interests.text = "I like...\n\("Long walks on the beach")"
+        interests.attributedText = varyBoldText(boldText: "I like...\n", regularText: "Long walks on the beach")
         interests.sizeToFit()
-        idealMatch.text = "My ideal match is... \n\(chocolate.targetUser ?? "A lovely soul")"
+        idealMatch.attributedText = varyBoldText(boldText: "My ideal match is...\n", regularText: "\(chocolate.targetUser ?? "A lovely soul")")
         idealMatch.sizeToFit()
         
         contentView.layer.cornerRadius = 8
         
-        let nav = self.navigationController!.navigationBar
-        
-        let yellow = UIColor(rgb: 0xFFF8DC)
-
-        nav.barStyle = .black
         self.title = "Profile"
         }
     
+    func varyBoldText (boldText: String, regularText: String) ->  NSAttributedString {
+        let boldAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17)]
+        let regularAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17)]
+        
+        let boldTextNS = NSMutableAttributedString(string: boldText, attributes: boldAttributes)
+        let regularTextNS = NSMutableAttributedString(string: regularText, attributes: regularAttributes)
+        
+        boldTextNS.append(regularTextNS)
+        return boldTextNS
+    }
 
 }
 
