@@ -29,6 +29,8 @@ class KolodaViewController: UIViewController {
         self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "left-arrow")
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "left-arrow")
         navigationItem.largeTitleDisplayMode = .always
+        
+        kolodaView.layer.cornerRadius = 8
     }
     
     
@@ -60,18 +62,13 @@ extension KolodaViewController: KolodaViewDelegate {
     
     
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
-        //        delete all the crap below and add segue, loads show page
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             vc.imagetoLoad = UIImage(named: "\(index + 1)")
             vc.chocolate = chocolates[index]
             navigationController?.pushViewController(vc, animated: true)
         }
-            
-            
-//        let alert = UIAlertController(title: "Congratulations!", message: "Now you're at a card \(index + 1)", preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "OK", style: .default))
-//        self.present(alert, animated: true)
+        
     }
     
 //    func swipeLeft() { 
@@ -87,13 +84,13 @@ extension KolodaViewController: KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let photoView = Bundle.main.loadNibNamed("ChocolateCard",
                                                  owner: self, options: nil)?[0] as? ChocolateCard
+        photoView?.layer.cornerRadius = 8
         let chocolate = chocolates[index]
         
         photoView?.imageView?.image = UIImage(named: "\(index + 1)")
         photoView?.chocolate = chocolate
         return photoView!
     }
-    
     
     
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {

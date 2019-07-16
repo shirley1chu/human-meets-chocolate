@@ -19,9 +19,9 @@ class ChocolateCard: UIView {
     
     var chocolate: Chocolate! {
         didSet{
-            brand.text = chocolate.brand
-            flavor.text = chocolate.flavor
-            type.text = chocolate.type
+            brand.text = "Brand: \(chocolate.brand!)"
+            flavor.text = "Flavor: \(chocolate.flavor!)"
+            type.text = "Type: \(chocolate.type!)"
         }
     }
 }
