@@ -20,13 +20,17 @@ class KolodaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(chocolates)
 //        provides view to populate koloda view
         kolodaView.dataSource = self
         
 //        responds to kolodaview events
         kolodaView.delegate = self
+        
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "left-arrow")
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "left-arrow")
+        navigationItem.largeTitleDisplayMode = .always
     }
+    
     
     //MARK: IBActions
 //    @IBAction func leftButtonTapped() {

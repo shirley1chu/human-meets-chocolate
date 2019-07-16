@@ -9,6 +9,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var contentView: UIView!
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var brand: UILabel!
@@ -21,31 +23,28 @@ class DetailViewController: UIViewController {
     var chocolate: Chocolate!
     var imagetoLoad: UIImage?
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.largeTitleDisplayMode = .never
         imageView.image = imagetoLoad
+        imageView.layer.cornerRadius = 8 
         brand.text = "Brand: \(chocolate.brand!)"
         flavor.text = "Flavor: \(chocolate.flavor!)"
         type.text = "Type: \(chocolate.type!)"
-        about.text = "I am...\n \(chocolate.about ?? ""))"
+        about.text = "I am...\n\(chocolate.about ?? ""))"
         about.sizeToFit()
-        interests.text = "I like...\n \("Long walks on the beach")"
+        interests.text = "I like...\n\("Long walks on the beach")"
         interests.sizeToFit()
-        idealMatch.text = "My ideal match is... \n \(chocolate.targetUser ?? "A lovely soul")"
+        idealMatch.text = "My ideal match is... \n\(chocolate.targetUser ?? "A lovely soul")"
         idealMatch.sizeToFit()
         
+        contentView.layer.cornerRadius = 8
+        
         let nav = self.navigationController!.navigationBar
-//        nav.backBarButtonItem?.title = "Hello world"
         nav.barStyle = .black
         self.title = "Profile"
         }
     
 
-    
-    
-    }
+}
 
 
