@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7118669022DFA742009EA395 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118668F22DFA742009EA395 /* MatchesViewController.swift */; };
 		7118669222DFA944009EA395 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118669122DFA944009EA395 /* Match.swift */; };
+		7118669822DFCF6C009EA395 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118669722DFCF6C009EA395 /* MatchCell.swift */; };
+		7118669A22DFCF89009EA395 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118669922DFCF89009EA395 /* MatchCell.swift */; };
 		711C5ED622DD0468005F9EA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C5ED522DD0468005F9EA4 /* DetailViewController.swift */; };
 		7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */; };
 		7135BCDE22DAD6910020BABC /* ChocolateDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */; };
@@ -30,6 +32,8 @@
 		51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanMeetsChocolate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7118668F22DFA742009EA395 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
 		7118669122DFA944009EA395 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		7118669722DFCF6C009EA395 /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+		7118669922DFCF89009EA395 /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchCell.swift; path = "/Users/shirleychu/Documents/Capstone/Human Meets Chocolate/Human Meets Chocolate/MatchCell.swift"; sourceTree = "<absolute>"; };
 		711C5ED522DD0468005F9EA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "/Users/shirleychu/Documents/Capstone/Human Meets Chocolate/Human Meets Chocolate/DetailViewController.swift"; sourceTree = "<absolute>"; };
 		7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChocolateDetailPage.xib; sourceTree = "<group>"; };
 		7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateDetailPage.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		719673A222D50E0200917428 /* Human Meets Chocolate */ = {
 			isa = PBXGroup;
 			children = (
+				7118669922DFCF89009EA395 /* MatchCell.swift */,
 				719673B922D53D8700917428 /* KolodaViewController.swift */,
 				711C5ED522DD0468005F9EA4 /* DetailViewController.swift */,
 				719673A322D50E0200917428 /* AppDelegate.swift */,
@@ -103,6 +108,7 @@
 				71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */,
 				7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */,
 				7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */,
+				7118669722DFCF6C009EA395 /* MatchCell.swift */,
 				719673AA22D50E0400917428 /* Assets.xcassets */,
 				719673AC22D50E0400917428 /* LaunchScreen.storyboard */,
 				719673AF22D50E0400917428 /* Info.plist */,
@@ -243,6 +249,8 @@
 				7118669022DFA742009EA395 /* MatchesViewController.swift in Sources */,
 				719673BA22D53D8700917428 /* KolodaViewController.swift in Sources */,
 				719673A422D50E0200917428 /* AppDelegate.swift in Sources */,
+				7118669822DFCF6C009EA395 /* MatchCell.swift in Sources */,
+				7118669A22DFCF89009EA395 /* MatchCell.swift in Sources */,
 				7135BCDE22DAD6910020BABC /* ChocolateDetailPage.swift in Sources */,
 				711C5ED622DD0468005F9EA4 /* DetailViewController.swift in Sources */,
 			);

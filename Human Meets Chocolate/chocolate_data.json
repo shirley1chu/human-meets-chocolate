@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "type": "Milk",
         "flavor": "Mokaccino",
         "brand": "TCHO",
@@ -12,6 +13,7 @@
         "special_features": "Blue bottle coffee, Organic, Fair Trade"
     },
     {
+        "id": 2,
         "type": "Dark",
         "flavor": "Salted Almond Butter",
         "brand": "Chocolove",
@@ -24,6 +26,7 @@
         "special_features": "Contains love poem insde"
     },
     {
+        "id": 3,
         "type": "Dark",
         "flavor": "Ginger",
         "brand": "Chocolove",
@@ -36,6 +39,7 @@
         "special_features": "Good for colds, contains love poem inside!"
     },
     {
+        "id": 4,
         "type": "Milk",
         "flavor": "Salted Almond",
         "brand": "Theo's",
@@ -48,6 +52,7 @@
         "special_features": "Organinc, Fair Trade, Vegan, Gluten Free"
     },
     {
+        "id": 5,
         "type": "White",
         "flavor": "Mango Lassi",
         "brand": "TCHO",
@@ -60,6 +65,7 @@
         "special_features": "Microbatch"
     },
     {
+        "id": 6,
         "type": "Milk",
         "flavor": "Cinnamon Spice",
         "brand": "TCHO",
@@ -72,6 +78,7 @@
         "special_features": "Organic"
     },
     {
+        "id": 7,
         "type": "Dark",
         "flavor": "Grapefruit & Ginger",
         "brand": "TCHO",
@@ -84,6 +91,7 @@
         "special_features": "Microbatch"
     },
     {
+        "id": 8,
         "type": "Milk",
         "flavor": "Snickerdoodle",
         "brand": "TCHO",
@@ -96,6 +104,7 @@
         "special_features": "Organic, Fair Trade"
     },
     {
+        "id": 9,
         "type": "Milk",
         "flavor": "Pretzel Crunch",
         "brand": "TCHO",

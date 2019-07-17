@@ -10,6 +10,7 @@ import UIKit
 
 class MatchesViewController: UITableViewController {
     
+    
     static var matches: [Chocolate] = []
     var matches: [Chocolate] = []
     
@@ -31,10 +32,8 @@ class MatchesViewController: UITableViewController {
     
     //    assigns cell's text to pictures's file name, and returns the cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Match", for: indexPath)
-        let chocolate = matches[indexPath.row]
-        cell.textLabel?.text = chocolate.brand
-        cell.detailTextLabel?.text = chocolate.flavor
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Match", for: indexPath) as! MatchCell
+        cell.chocolate = matches[indexPath.row]
         return cell
     }
     
