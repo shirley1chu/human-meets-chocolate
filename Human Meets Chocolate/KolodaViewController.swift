@@ -10,7 +10,7 @@ import UIKit
 import Koloda
 
 class KolodaViewController: UIViewController {
-
+    
     @IBOutlet var kolodaView: KolodaView!
     
     let chocolates = chocolateCollection().chocolates
@@ -20,10 +20,10 @@ class KolodaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        provides view to populate koloda view
+        //        provides view to populate koloda view
         kolodaView.dataSource = self
         
-//        responds to kolodaview events
+        //        responds to kolodaview events
         kolodaView.delegate = self
         
         self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "left-arrow")
@@ -35,29 +35,33 @@ class KolodaViewController: UIViewController {
     
     
     //MARK: IBActions
-//    @IBAction func leftButtonTapped() {
-//        kolodaView?.swipe(SwipeResultDirection.Left)
-//        kolodaView?.swipeLeft()
-//    }
+    @IBAction func leftButtonTapped() {
+        //        kolodaView?.swipe(SwipeResultDirection.Left)
+        //        kolodaView?.swipeLeft()
+        print("goodbye world")
+        kolodaView.swipe(.left)
+
+    }
     
-//    @IBAction func rightButtonTapped() {
-//        swipeRight()
-//    }
-//
-//    @IBAction func undoButtonTapped() {
-//        kolodaView?.revertAction()
-//    }
+    @IBAction func rightButtonTapped() {
+        print("hello world")
+        kolodaView.swipe(.right)
+    }
+    //
+    //    @IBAction func undoButtonTapped() {
+    //        kolodaView?.revertAction()
+    //    }
     
 }
 
 
 
-extension KolodaViewController: KolodaViewDelegate {
+extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
         koloda.resetCurrentCardIndex()
-//        show 'recommendations empty' page
-//        might need to use segue 
+        //        show 'recommendations empty' page
+        //        might need to use segue
     }
     
     
@@ -71,16 +75,19 @@ extension KolodaViewController: KolodaViewDelegate {
         
     }
     
-//    func swipeLeft() { 
-//        print("left swipe")
-//    }
-////
-//    func swipeRight () {
-//        print("right swipe")
-//    }
-}
-
-extension KolodaViewController: KolodaViewDataSource {
+    
+    func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
+        print("in this function")
+        if direction == .left {
+            print("left swipe")
+            return
+        }
+        else if direction == .right {
+            print("right swipe")
+            return
+        }
+    }
+    
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let photoView = Bundle.main.loadNibNamed("ChocolateCard",
                                                  owner: self, options: nil)?[0] as? ChocolateCard
@@ -88,6 +95,7 @@ extension KolodaViewController: KolodaViewDataSource {
         let chocolate = chocolates[index]
         
         photoView?.imageView?.image = UIImage(named: "\(index + 1)")
+        photoView?.imageView.layer.cornerRadius = 8
         photoView?.chocolate = chocolate
         return photoView!
     }
@@ -98,5 +106,5 @@ extension KolodaViewController: KolodaViewDataSource {
     }
     
     
-
 }
+

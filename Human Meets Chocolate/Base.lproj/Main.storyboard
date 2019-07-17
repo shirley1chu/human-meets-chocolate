@@ -36,25 +36,35 @@
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTn-gS-FCc" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="20" y="108" width="374" height="550"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="550" id="RwW-hY-vD0"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tos-BF-JlG">
-                                <rect key="frame" x="170" y="733" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="162" translatesAutoresizingMaskIntoConstraints="NO" id="Tos-BF-JlG">
+                                <rect key="frame" x="51" y="690" width="312" height="75"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsg-4M-Pun">
-                                        <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
-                                        <state key="normal" title="Dislike"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsg-4M-Pun">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="4PI-PD-qxT"/>
+                                            <constraint firstAttribute="height" constant="75" id="bUd-Zw-n77"/>
+                                        </constraints>
+                                        <state key="normal" image="4125770-128">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="leftButtonTapped" destination="gP8-bR-lWb" eventType="touchUpInside" id="hq1-g5-zvC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-Ck-h7g">
-                                        <rect key="frame" x="45" y="0.0" width="30" height="30"/>
-                                        <state key="normal" title="Like"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-Ck-h7g">
+                                        <rect key="frame" x="237" y="0.0" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="B6Q-eE-RXz"/>
+                                            <constraint firstAttribute="height" constant="75" id="f0N-FF-yF4"/>
+                                        </constraints>
+                                        <state key="normal" title="Like" image="4125786-128"/>
                                         <connections>
                                             <action selector="rightButtonTapped" destination="gP8-bR-lWb" eventType="touchUpInside" id="CnG-Ag-0GR"/>
                                         </connections>
@@ -65,7 +75,9 @@
                         <color key="backgroundColor" red="0.21437206864356995" green="0.138653963804245" blue="0.085806585848331451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2Rs-95-Ru5" firstAttribute="trailing" secondItem="hTn-gS-FCc" secondAttribute="trailing" constant="20" id="0CE-WT-HLA"/>
+                            <constraint firstItem="Tos-BF-JlG" firstAttribute="top" secondItem="hTn-gS-FCc" secondAttribute="bottom" constant="32" id="3e3-nv-yqW"/>
                             <constraint firstItem="hTn-gS-FCc" firstAttribute="top" secondItem="2Rs-95-Ru5" secondAttribute="top" constant="20" id="Wwj-dR-nDg"/>
+                            <constraint firstItem="Tos-BF-JlG" firstAttribute="centerX" secondItem="z8t-qx-2Tw" secondAttribute="centerX" id="mIn-Aq-p9f"/>
                             <constraint firstItem="hTn-gS-FCc" firstAttribute="leading" secondItem="2Rs-95-Ru5" secondAttribute="leading" constant="20" id="xqz-YX-p0U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Rs-95-Ru5"/>
@@ -236,4 +248,8 @@
             <point key="canvasLocation" x="1644.9275362318842" y="-591.29464285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="4125770-128" width="128" height="128"/>
+        <image name="4125786-128" width="128" height="128"/>
+    </resources>
 </document>
