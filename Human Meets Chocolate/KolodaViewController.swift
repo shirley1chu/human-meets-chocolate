@@ -40,7 +40,7 @@ class KolodaViewController: UIViewController {
         //        kolodaView?.swipeLeft()
         print("goodbye world")
         kolodaView.swipe(.left)
-
+        
     }
     
     @IBAction func rightButtonTapped() {
@@ -84,9 +84,9 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
         }
         else if direction == .right {
             print("right swipe")
-            if let matchesController = storyboard?.instantiateViewController(withIdentifier: "MatchesController") as? MatchesViewController {
-                matchesController.matches.append(chocolates[index])
-            }
+            print("appending matches view controller")
+//            let vc = storyboard?.instantiateViewController(withIdentifier: "MatchesController") as? MatchesViewController
+            MatchesViewController.matches.append(chocolates[index])
             return
         }
     }
