@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Recommendations-->
+        <!--Suggested-->
         <scene sceneID="qfY-I4-lAn">
             <objects>
                 <viewController id="gP8-bR-lWb" customClass="KolodaViewController" customModule="HumanMeetsChocolate" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,7 +67,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Rs-95-Ru5"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Recommendations" id="EFa-uc-H1m"/>
+                    <navigationItem key="navigationItem" title="Suggested" id="EFa-uc-H1m"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <connections>
                         <outlet property="kolodaView" destination="hTn-gS-FCc" id="aQO-aY-ZlF"/>
@@ -203,26 +203,30 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9wH-bU-jSg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.21437206864356995" green="0.138653963804245" blue="0.085806585848331451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="ueA-pd-RZN" kind="relationship" relationship="viewControllers" id="VOe-2A-6NB"/>
-                        <segue destination="MrZ-Ys-Ulg" kind="relationship" relationship="viewControllers" id="mcM-B5-TOx"/>
+                        <segue destination="MoS-cy-ZRw" kind="relationship" relationship="viewControllers" id="mcM-B5-TOx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9h-6F-gyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-222" y="-1283"/>
         </scene>
-        <!--Recommendations-->
+        <!--Suggested-->
         <scene sceneID="e1F-OP-3OR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ueA-pd-RZN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recommendations" id="YXG-WB-fVY"/>
+                    <tabBarItem key="tabBarItem" title="Suggested" id="YXG-WB-fVY">
+                        <color key="badgeColor" red="0.21437206864356995" green="0.138653963804245" blue="0.085806585848331451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VuW-H2-d27">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.21437206864356995" green="0.138653963804245" blue="0.085806585848331451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -236,18 +240,34 @@
         <!--Matches-->
         <scene sceneID="kSb-dT-rPY">
             <objects>
-                <tableViewController id="MrZ-Ys-Ulg" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MatchesController" title="Matches" id="MrZ-Ys-Ulg" customClass="MatchesViewController" customModule="HumanMeetsChocolate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NnI-95-PfM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="icn-uM-cOa">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MatchCell" textLabel="X0S-vI-YKQ" detailTextLabel="vv9-cv-6OA" style="IBUITableViewCellStyleSubtitle" id="icn-uM-cOa">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="icn-uM-cOa" id="v6K-wJ-JLy">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X0S-vI-YKQ">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vv9-cv-6OA">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -256,11 +276,30 @@
                             <outlet property="delegate" destination="MrZ-Ys-Ulg" id="JqO-I4-HgP"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Matches" id="wkW-st-CP8"/>
+                    <navigationItem key="navigationItem" title="Matches" id="7XY-X1-48j"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AY-ki-9b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="-531"/>
+            <point key="canvasLocation" x="1505.7971014492755" y="-531.02678571428567"/>
+        </scene>
+        <!--Matches-->
+        <scene sceneID="tQz-w6-pcb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MoS-cy-ZRw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Matches" id="wkW-st-CP8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7gn-Kl-jhx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MrZ-Ys-Ulg" kind="relationship" relationship="rootViewController" id="c74-qV-NbZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDM-H0-c53" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595.6521739130435" y="-531.02678571428567"/>
         </scene>
     </scenes>
     <resources>

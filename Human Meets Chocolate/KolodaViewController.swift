@@ -84,6 +84,9 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
         }
         else if direction == .right {
             print("right swipe")
+            if let matchesController = storyboard?.instantiateViewController(withIdentifier: "MatchesController") as? MatchesViewController {
+                matchesController.matches.append(chocolates[index])
+            }
             return
         }
     }
