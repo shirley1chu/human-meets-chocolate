@@ -73,6 +73,7 @@
                         <color key="backgroundColor" red="0.21437206864356995" green="0.138653963804245" blue="0.085806585848331451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2Rs-95-Ru5" firstAttribute="trailing" secondItem="qV8-Ck-h7g" secondAttribute="trailing" constant="66" id="Ixj-AA-1Y8"/>
+                            <constraint firstItem="2Rs-95-Ru5" firstAttribute="trailing" secondItem="qV8-Ck-h7g" secondAttribute="trailing" constant="66" id="MxN-D4-nI9"/>
                             <constraint firstItem="hTn-gS-FCc" firstAttribute="top" secondItem="2Rs-95-Ru5" secondAttribute="top" constant="20" id="Wwj-dR-nDg"/>
                             <constraint firstItem="2Rs-95-Ru5" firstAttribute="bottom" secondItem="nsg-4M-Pun" secondAttribute="bottom" constant="43" id="Zsh-IT-jG6"/>
                             <constraint firstItem="nsg-4M-Pun" firstAttribute="top" secondItem="hTn-gS-FCc" secondAttribute="bottom" constant="37" id="fCK-hd-bA9"/>
