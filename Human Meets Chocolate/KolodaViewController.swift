@@ -54,9 +54,11 @@ class KolodaViewController: UIViewController {
 extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        koloda.resetCurrentCardIndex()
+//        koloda.resetCurrentCardIndex()
         //        show 'recommendations empty' page
         //        might need to use segue
+        
+        print("you have no more recommendations :(")
     }
     
     
@@ -77,9 +79,12 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
             return
         }
         else if direction == .right {
-            print("right swipe")
-            print("appending matches view controller")
             MatchesViewController.matches.append(chocolates[index])
+            let alertController = UIAlertController(title: "Success!", message:
+                "It's a match <3", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            
+            self.present(alertController, animated: true, completion: nil)
             return
         }
     }
