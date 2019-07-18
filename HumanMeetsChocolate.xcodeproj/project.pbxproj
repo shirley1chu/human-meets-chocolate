@@ -13,6 +13,7 @@
 		711C5ED622DD0468005F9EA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C5ED522DD0468005F9EA4 /* DetailViewController.swift */; };
 		7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */; };
 		7135BCDE22DAD6910020BABC /* ChocolateDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */; };
+		716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 716C5F9622E11228007A2B5A /* crying-gif.gif */; };
 		719673A422D50E0200917428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719673A322D50E0200917428 /* AppDelegate.swift */; };
 		719673A922D50E0300917428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719673A722D50E0300917428 /* Main.storyboard */; };
 		719673AB22D50E0400917428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719673AA22D50E0400917428 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		711C5ED522DD0468005F9EA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "/Users/shirleychu/Documents/Capstone/Human Meets Chocolate/Human Meets Chocolate/DetailViewController.swift"; sourceTree = "<absolute>"; };
 		7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChocolateDetailPage.xib; sourceTree = "<group>"; };
 		7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateDetailPage.swift; sourceTree = "<group>"; };
+		716C5F9622E11228007A2B5A /* crying-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "crying-gif.gif"; path = "Gifs/crying-gif.gif"; sourceTree = "<group>"; };
 		719673A022D50E0200917428 /* HumanMeetsChocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanMeetsChocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719673A322D50E0200917428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719673A822D50E0300917428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */,
 				7118669722DFCF6C009EA395 /* MatchCell.swift */,
 				719673AA22D50E0400917428 /* Assets.xcassets */,
+				716C5F9622E11228007A2B5A /* crying-gif.gif */,
 				719673AC22D50E0400917428 /* LaunchScreen.storyboard */,
 				719673AF22D50E0400917428 /* Info.plist */,
 			);
@@ -185,6 +188,7 @@
 				719673AB22D50E0400917428 /* Assets.xcassets in Resources */,
 				7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */,
 				719673B622D50E5200917428 /* chocolate_data.json in Resources */,
+				716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */,
 				719673A922D50E0300917428 /* Main.storyboard in Resources */,
 				71AC1DBD22D7FA200077311A /* ChocolateCard.xib in Resources */,
 			);

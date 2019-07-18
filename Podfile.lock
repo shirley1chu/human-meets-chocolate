@@ -2,19 +2,23 @@ PODS:
   - Koloda (5.0):
     - pop (~> 1.0)
   - pop (1.0.12)
+  - SwiftyGif (5.1.1)
 
 DEPENDENCIES:
   - Koloda
+  - SwiftyGif
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Koloda
     - pop
+    - SwiftyGif
 
 SPEC CHECKSUMS:
   Koloda: 75302d21882cc3e274c1561b1155805ea5919dab
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SwiftyGif: f7702483db93586a41f04f4927cd682852a2fa10
 
-PODFILE CHECKSUM: 75ecab457aeb024bfc0d9305fa5e14f32143656a
+PODFILE CHECKSUM: 018779706e746c730e2f561b21c2e1c2e372b11e
 
 COCOAPODS: 1.7.3

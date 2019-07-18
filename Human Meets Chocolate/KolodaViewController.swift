@@ -8,10 +8,13 @@
 
 import UIKit
 import Koloda
+import SwiftyGif
 
 class KolodaViewController: UIViewController {
     
     @IBOutlet var kolodaView: KolodaView!
+    
+    @IBOutlet weak var emptyGifView: UIImageView!
     
     let chocolates = chocolateCollection().chocolates
     
@@ -57,7 +60,8 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
 //        koloda.resetCurrentCardIndex()
         //        show 'recommendations empty' page
         //        might need to use segue
-        
+        let gif = try? UIImage(gifName: "crying-gif.gif")
+        emptyGifView.setGifImage(gif!)
         print("you have no more recommendations :(")
     }
     
