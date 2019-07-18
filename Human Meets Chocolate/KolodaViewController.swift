@@ -36,15 +36,10 @@ class KolodaViewController: UIViewController {
     
     //MARK: IBActions
     @IBAction func leftButtonTapped() {
-        //        kolodaView?.swipe(SwipeResultDirection.Left)
-        //        kolodaView?.swipeLeft()
-        print("goodbye world")
         kolodaView.swipe(.left)
-        
     }
     
     @IBAction func rightButtonTapped() {
-        print("hello world")
         kolodaView.swipe(.right)
     }
     //
@@ -68,7 +63,6 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
-            vc.imagetoLoad = UIImage(named: "\(index + 1)")
             vc.chocolate = chocolates[index]
             navigationController?.pushViewController(vc, animated: true)
         }
@@ -85,22 +79,18 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
         else if direction == .right {
             print("right swipe")
             print("appending matches view controller")
-//            let vc = storyboard?.instantiateViewController(withIdentifier: "MatchesController") as? MatchesViewController
             MatchesViewController.matches.append(chocolates[index])
             return
         }
     }
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        let photoView = Bundle.main.loadNibNamed("ChocolateCard",
+        let chocolateCard = Bundle.main.loadNibNamed("ChocolateCard",
                                                  owner: self, options: nil)?[0] as? ChocolateCard
-        photoView?.layer.cornerRadius = 8
+        chocolateCard?.layer.cornerRadius = 8
         let chocolate = chocolates[index]
-        
-        photoView?.imageView?.image = UIImage(named: "\(index + 1)")
-        photoView?.imageView.layer.cornerRadius = 8
-        photoView?.chocolate = chocolate
-        return photoView!
+        chocolateCard?.chocolate = chocolate
+        return chocolateCard!
     }
     
     

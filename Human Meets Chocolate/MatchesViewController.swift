@@ -25,17 +25,26 @@ class MatchesViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    //    loads as many cells as there are pictures
+    //    loads as many cells as there are matches 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return matches.count
     }
     
-    //    assigns cell's text to pictures's file name, and returns the cell
+    //    assigns pictures and text to cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Match", for: indexPath) as! MatchCell
         cell.chocolate = matches[indexPath.row]
         return cell
     }
     
+//    loads detail page on selecting cell
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailView = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            let chocolate = matches[indexPath.row]
+            detailView.chocolate = chocolate
+            navigationController?.pushViewController(detailView, animated: true)
+        }
+    }
+
     
 }
