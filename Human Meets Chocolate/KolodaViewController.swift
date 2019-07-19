@@ -18,7 +18,7 @@ class KolodaViewController: UIViewController {
     
     let chocolates = chocolateCollection().chocolates
     
-    private let numberOfCards = 9
+    private let numberOfCards = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
