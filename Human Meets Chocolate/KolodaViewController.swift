@@ -8,10 +8,13 @@
 
 import UIKit
 import Koloda
+import SwiftyGif
 
 class KolodaViewController: UIViewController {
     
     @IBOutlet var kolodaView: KolodaView!
+    
+    @IBOutlet weak var emptyGifView: UIImageView!
     
     let chocolates = chocolateCollection().chocolates
     
@@ -36,15 +39,10 @@ class KolodaViewController: UIViewController {
     
     //MARK: IBActions
     @IBAction func leftButtonTapped() {
-        //        kolodaView?.swipe(SwipeResultDirection.Left)
-        //        kolodaView?.swipeLeft()
-        print("goodbye world")
         kolodaView.swipe(.left)
-
     }
     
     @IBAction func rightButtonTapped() {
-        print("hello world")
         kolodaView.swipe(.right)
     }
     //
@@ -59,16 +57,18 @@ class KolodaViewController: UIViewController {
 extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        koloda.resetCurrentCardIndex()
+//        koloda.resetCurrentCardIndex()
         //        show 'recommendations empty' page
         //        might need to use segue
+        let gif = try? UIImage(gifName: "crying-gif.gif")
+        emptyGifView.setGifImage(gif!)
+        print("you have no more recommendations :(")
     }
     
     
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
-            vc.imagetoLoad = UIImage(named: "\(index + 1)")
             vc.chocolate = chocolates[index]
             navigationController?.pushViewController(vc, animated: true)
         }
@@ -83,21 +83,23 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
             return
         }
         else if direction == .right {
-            print("right swipe")
+            MatchesViewController.matches.append(chocolates[index])
+            let alertController = UIAlertController(title: "Success!", message:
+                "It's a match <3", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            
+            self.present(alertController, animated: true, completion: nil)
             return
         }
     }
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        let photoView = Bundle.main.loadNibNamed("ChocolateCard",
+        let chocolateCard = Bundle.main.loadNibNamed("ChocolateCard",
                                                  owner: self, options: nil)?[0] as? ChocolateCard
-        photoView?.layer.cornerRadius = 8
+        chocolateCard?.layer.cornerRadius = 8
         let chocolate = chocolates[index]
-        
-        photoView?.imageView?.image = UIImage(named: "\(index + 1)")
-        photoView?.imageView.layer.cornerRadius = 8
-        photoView?.chocolate = chocolate
-        return photoView!
+        chocolateCard?.chocolate = chocolate
+        return chocolateCard!
     }
     
     

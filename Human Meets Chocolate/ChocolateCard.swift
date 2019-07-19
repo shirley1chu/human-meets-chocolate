@@ -19,9 +19,11 @@ class ChocolateCard: UIView {
     
     var chocolate: Chocolate! {
         didSet{
+            imageView.image = UIImage(named: "\(chocolate.id)")
             brand.text = "Brand: \(chocolate.brand!)"
             flavor.text = "Flavor: \(chocolate.flavor!)"
             type.text = "Type: \(chocolate.type!)"
+            imageView.layer.cornerRadius = 8
         }
     }
 }

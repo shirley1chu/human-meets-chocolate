@@ -8,4 +8,6 @@ target 'HumanMeetsChocolate' do
   # Pods for HumanMeetsChocolate
 
   pod "Koloda"
+  pod 'SwiftyGif'
+
 end

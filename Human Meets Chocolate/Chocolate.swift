@@ -10,6 +10,7 @@ import Foundation
 
 class Chocolate: NSObject, Codable {
     
+        var id: Int
         var type: String?
         var flavor: String?
         var brand: String?
@@ -20,6 +21,7 @@ class Chocolate: NSObject, Codable {
         var specialFeatures: String?
     
     enum CodingKeys : String, CodingKey {
+        case id 
         case type
         case flavor
         case brand
