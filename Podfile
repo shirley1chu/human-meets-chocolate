@@ -9,5 +9,7 @@ target 'HumanMeetsChocolate' do
 
   pod "Koloda"
   pod 'SwiftyGif'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 
 end

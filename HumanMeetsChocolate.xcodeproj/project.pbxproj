@@ -24,6 +24,7 @@
 		71AC1DBF22D7FA970077311A /* Chocolates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DBE22D7FA970077311A /* Chocolates.swift */; };
 		71AC1DC122D7FAA00077311A /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DC022D7FA9F0077311A /* Chocolate.swift */; };
 		71AC1DC322D7FB030077311A /* ChocolateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DC222D7FB030077311A /* ChocolateCard.swift */; };
+		71DCA15E22E266F200B98E39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71DCA15D22E266F200B98E39 /* GoogleService-Info.plist */; };
 		A3D879EDDCE03EFF7FAE73CD /* Pods_HumanMeetsChocolate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		71AC1DBE22D7FA970077311A /* Chocolates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolates.swift; sourceTree = "<group>"; };
 		71AC1DC022D7FA9F0077311A /* Chocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
 		71AC1DC222D7FB030077311A /* ChocolateCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateCard.swift; sourceTree = "<group>"; };
+		71DCA15D22E266F200B98E39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B3B61E6BCA2A40286ECDE7D6 /* Pods-HumanMeetsChocolate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanMeetsChocolate.release.xcconfig"; path = "Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				71AC1DC222D7FB030077311A /* ChocolateCard.swift */,
 				71AC1DC022D7FA9F0077311A /* Chocolate.swift */,
 				71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */,
+				71DCA15D22E266F200B98E39 /* GoogleService-Info.plist */,
 				7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */,
 				7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */,
 				7118669722DFCF6C009EA395 /* MatchCell.swift */,
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */,
+				71DCA15E22E266F200B98E39 /* GoogleService-Info.plist in Resources */,
 				719673AB22D50E0400917428 /* Assets.xcassets in Resources */,
 				7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */,
 				719673B622D50E5200917428 /* chocolate_data.json in Resources */,
