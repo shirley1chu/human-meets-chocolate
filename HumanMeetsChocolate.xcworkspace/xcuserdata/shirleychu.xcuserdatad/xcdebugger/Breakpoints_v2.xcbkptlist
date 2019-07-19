@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Human Meets Chocolate/ViewController.swift"
-            timestampString = "584910490.996789"
+            timestampString = "585081615.87797"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
@@ -26,23 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Human Meets Chocolate/KolodaViewController.swift"
-            timestampString = "585079588.115188"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "koloda(_:didSelectCardAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Human Meets Chocolate/KolodaViewController.swift"
-            timestampString = "585079588.122081"
+            timestampString = "585259294.160856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -58,13 +42,121 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Human Meets Chocolate/DetailViewController.swift"
-            timestampString = "585079588.123034"
+            timestampString = "585257056.781155"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Human Meets Chocolate/MatchCell.swift"
+            timestampString = "585180049.960971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "MatchCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HumanMeetsChocolate.MatchCell.flavorLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "HumanMeetsChocolate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirleychu/Documents/Capstone/Human%20Meets%20Chocolate/Human%20Meets%20Chocolate/MatchCell.swift"
+                  timestampString = "585094492.477546"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HumanMeetsChocolate.MatchCell.flavorLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "HumanMeetsChocolate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirleychu/Documents/Capstone/Human%20Meets%20Chocolate/Human%20Meets%20Chocolate/MatchCell.swift"
+                  timestampString = "585094492.4799581"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HumanMeetsChocolate.MatchCell.flavorLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "HumanMeetsChocolate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirleychu/Documents/Capstone/Human%20Meets%20Chocolate/Human%20Meets%20Chocolate/MatchCell.swift"
+                  timestampString = "585094492.481734"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HumanMeetsChocolate.MatchCell.flavorLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "HumanMeetsChocolate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirleychu/Documents/Capstone/Human%20Meets%20Chocolate/Human%20Meets%20Chocolate/MatchCell.swift"
+                  timestampString = "585094492.483235"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HumanMeetsChocolate.MatchCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; HumanMeetsChocolate.MatchCell"
+                  moduleName = "HumanMeetsChocolate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirleychu/Documents/Capstone/Human%20Meets%20Chocolate/Human%20Meets%20Chocolate/MatchCell.swift"
+                  timestampString = "585094492.484718"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "423">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HumanMeetsChocolate.MatchCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HumanMeetsChocolate.MatchCell&gt;"
+                  moduleName = "HumanMeetsChocolate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirleychu/Documents/Capstone/Human%20Meets%20Chocolate/Human%20Meets%20Chocolate/MatchCell.swift"
+                  timestampString = "585094492.486437"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "343">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
