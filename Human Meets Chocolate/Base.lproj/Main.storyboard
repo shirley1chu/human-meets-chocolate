@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ABy-9W-4LV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="adw-vi-vPJ">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pacifico-Regular.ttf">
+            <string>Pacifico-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Suggested-->
         <scene sceneID="qfY-I4-lAn">
@@ -218,6 +223,69 @@
             </objects>
             <point key="canvasLocation" x="2186" y="-1283"/>
         </scene>
+        <!--Rotate View Controller-->
+        <scene sceneID="frY-tx-Ir4">
+            <objects>
+                <viewController id="adw-vi-vPJ" customClass="RotateViewController" customModule="HumanMeetsChocolate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QtS-YO-GEk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H ♡ C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMd-Mx-1dl">
+                                <rect key="frame" x="52.5" y="60" width="309" height="176"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="100"/>
+                                <color key="textColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human Meets Chocolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb0-L4-cQ1">
+                                <rect key="frame" x="73" y="522" width="268" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chocolate-launch-yellow" translatesAutoresizingMaskIntoConstraints="NO" id="yPm-dy-gaN">
+                                <rect key="frame" x="79" y="231" width="256" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="q04-n4-11X"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C46-8r-X6M">
+                                <rect key="frame" x="159" y="624" width="96" height="56"/>
+                                <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="g9K-vy-eAo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="25"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.21437206864356995" green="0.138653963804245" blue="0.085806585848331451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ABy-9W-4LV" kind="show" id="ARJ-LK-0yk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21437206864356995" green="0.138653963804245" blue="0.085806585848331451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yPm-dy-gaN" firstAttribute="top" secondItem="zMd-Mx-1dl" secondAttribute="bottom" constant="-5" id="0nL-Hv-GEr"/>
+                            <constraint firstItem="C46-8r-X6M" firstAttribute="centerX" secondItem="QtS-YO-GEk" secondAttribute="centerX" id="1Jh-5x-SdN"/>
+                            <constraint firstItem="C46-8r-X6M" firstAttribute="top" secondItem="qb0-L4-cQ1" secondAttribute="bottom" constant="72" id="2Pq-yf-VRn"/>
+                            <constraint firstItem="yPm-dy-gaN" firstAttribute="centerX" secondItem="QtS-YO-GEk" secondAttribute="centerX" id="8xe-Zh-va3"/>
+                            <constraint firstItem="zMd-Mx-1dl" firstAttribute="top" secondItem="fHU-oh-2DF" secondAttribute="top" constant="16" id="9tL-bK-yKG"/>
+                            <constraint firstItem="qb0-L4-cQ1" firstAttribute="centerX" secondItem="QtS-YO-GEk" secondAttribute="centerX" id="TEe-by-bAM"/>
+                            <constraint firstItem="zMd-Mx-1dl" firstAttribute="centerX" secondItem="QtS-YO-GEk" secondAttribute="centerX" id="mmV-Qn-Cwr"/>
+                            <constraint firstItem="qb0-L4-cQ1" firstAttribute="top" secondItem="yPm-dy-gaN" secondAttribute="bottom" constant="27" id="uqR-nb-1bL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fHU-oh-2DF"/>
+                    </view>
+                    <connections>
+                        <outlet property="enterButton" destination="C46-8r-X6M" id="ts8-y1-WTe"/>
+                        <outlet property="rotateImageView" destination="yPm-dy-gaN" id="TZn-pE-EB0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTg-Kf-rSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1146.376811594203" y="-1283.0357142857142"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mgJ-s8-7gk">
             <objects>
@@ -354,6 +422,7 @@
     <resources>
         <image name="4125770-128" width="128" height="128"/>
         <image name="4125786-128" width="128" height="128"/>
+        <image name="chocolate-launch-yellow" width="256" height="256"/>
         <image name="match-icon-resized" width="25" height="25"/>
         <image name="suggested-icon-resized" width="25" height="25"/>
     </resources>
