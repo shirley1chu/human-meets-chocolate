@@ -16,6 +16,7 @@
 		716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 716C5F9622E11228007A2B5A /* crying-gif.gif */; };
 		7188489122E66106004BAB91 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188489022E66106004BAB91 /* QuestionsViewController.swift */; };
 		7188489322E66144004BAB91 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188489222E66144004BAB91 /* ResultsViewController.swift */; };
+		7188489522E6662B004BAB91 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188489422E6662B004BAB91 /* QuestionData.swift */; };
 		719673A422D50E0200917428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719673A322D50E0200917428 /* AppDelegate.swift */; };
 		719673A922D50E0300917428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719673A722D50E0300917428 /* Main.storyboard */; };
 		719673AB22D50E0400917428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719673AA22D50E0400917428 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		716C5F9622E11228007A2B5A /* crying-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "crying-gif.gif"; path = "Gifs/crying-gif.gif"; sourceTree = "<group>"; };
 		7188489022E66106004BAB91 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		7188489222E66144004BAB91 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		7188489422E6662B004BAB91 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		719673A022D50E0200917428 /* HumanMeetsChocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanMeetsChocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719673A322D50E0200917428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719673A822D50E0300917428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				711C5ED522DD0468005F9EA4 /* DetailViewController.swift */,
 				719673A322D50E0200917428 /* AppDelegate.swift */,
 				719673A722D50E0300917428 /* Main.storyboard */,
+				7188489422E6662B004BAB91 /* QuestionData.swift */,
 				7188489222E66144004BAB91 /* ResultsViewController.swift */,
 				7188489022E66106004BAB91 /* QuestionsViewController.swift */,
 				7118669122DFA944009EA395 /* Match.swift */,
@@ -259,6 +262,7 @@
 				71AC1DBF22D7FA970077311A /* Chocolates.swift in Sources */,
 				71AC1DC122D7FAA00077311A /* Chocolate.swift in Sources */,
 				7188489122E66106004BAB91 /* QuestionsViewController.swift in Sources */,
+				7188489522E6662B004BAB91 /* QuestionData.swift in Sources */,
 				71DCA16822E2DB5600B98E39 /* RotateViewController.swift in Sources */,
 				7118669222DFA944009EA395 /* Match.swift in Sources */,
 				71AC1DC322D7FB030077311A /* ChocolateCard.swift in Sources */,
