@@ -18,8 +18,6 @@ class KolodaViewController: UIViewController {
     
     let chocolates = chocolateCollection().chocolates
     
-    private let numberOfCards = 3
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,7 +60,6 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
         //        might need to use segue
         let gif = try? UIImage(gifName: "crying-gif.gif")
         emptyGifView.setGifImage(gif!)
-        print("you have no more recommendations :(")
     }
     
     
@@ -104,7 +101,7 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
-        return numberOfCards
+        return chocolates.count
     }
     
     
