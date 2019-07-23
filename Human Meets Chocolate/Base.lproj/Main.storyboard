@@ -371,7 +371,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="See your matches!"/>
                                 <connections>
-                                    <segue destination="ABy-9W-4LV" kind="show" id="fXN-Fe-Epo"/>
+                                    <segue destination="ABy-9W-4LV" kind="show" identifier="TabSegue" id="fXN-Fe-Epo"/>
                                 </connections>
                             </button>
                         </subviews>

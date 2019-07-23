@@ -19,9 +19,11 @@ class ResultsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "KolodaSegue" {
-            let kolodaViewController = segue.destination as! KolodaViewController
-            kolodaViewController.recommendations = recommendations
+        if segue.identifier == "TabSegue" {
+            let tabBarController = segue.destination as? UITabBarController
+            let navigationController = tabBarController?.viewControllers?.first as? UINavigationController
+            let kolodaViewController = navigationController?.viewControllers.first as? KolodaViewController
+            kolodaViewController?.recommendations = recommendations
         }
     }
 }
