@@ -69,7 +69,7 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
-            vc.chocolate = chocolates[index]
+            vc.chocolate = recommendations[index]
             navigationController?.pushViewController(vc, animated: true)
         }
         
@@ -82,7 +82,7 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
             return
         }
         else if direction == .right {
-            MatchesViewController.matches.append(chocolates[index])
+            MatchesViewController.matches.append(recommendations[index])
             let alertController = UIAlertController(title: "Success!", message:
                 "It's a match <3", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -96,14 +96,14 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
         let chocolateCard = Bundle.main.loadNibNamed("ChocolateCard",
                                                  owner: self, options: nil)?[0] as? ChocolateCard
         chocolateCard?.layer.cornerRadius = 8
-        let chocolate = chocolates[index]
+        let chocolate = recommendations[index]
         chocolateCard?.chocolate = chocolate
         return chocolateCard!
     }
     
     
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
-        return chocolates.count
+        return recommendations.count
     }
     
     
