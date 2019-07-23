@@ -18,6 +18,8 @@ class KolodaViewController: UIViewController {
     
     let chocolates = chocolateCollection().chocolates
     
+    var recommendations: [Chocolate]!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,8 +29,6 @@ class KolodaViewController: UIViewController {
         //        responds to kolodaview events
         kolodaView.delegate = self
         
-        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "left-arrow")
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "left-arrow")
         navigationItem.largeTitleDisplayMode = .always
         
         kolodaView.layer.cornerRadius = 8
@@ -76,7 +76,6 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
         print("in this function")
         if direction == .left {
-            print("left swipe")
             return
         }
         else if direction == .right {
@@ -107,3 +106,12 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
 }
 
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).capitalized + dropFirst()
+    }
+    
+    mutating func capitalize() {
+        self = self.capitalizingFirstLetter()
+    }
+}

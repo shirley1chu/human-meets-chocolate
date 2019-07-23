@@ -10,10 +10,12 @@ import Foundation
 
 struct Question {
     var text: String
+    var attribute: String
     var answers: [Answer]
 }
 
 
 struct Answer {
     var text: String
+    var value: String
 }

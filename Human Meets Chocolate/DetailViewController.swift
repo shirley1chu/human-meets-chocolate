@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageView.image = UIImage(named: "\(chocolate.id)")
+        imageView.image = UIImage(named: "\(chocolate.id!)")
         imageView.layer.cornerRadius = 8
         brand.attributedText = varyBoldText(boldText: "Brand: ", regularText: "\(chocolate.brand!)")
         flavor.attributedText = varyBoldText(boldText: "Flavor: ", regularText: "\(chocolate.flavor!)")

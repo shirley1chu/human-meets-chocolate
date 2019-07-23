@@ -14,27 +14,30 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var answerButton1: UIButton!
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
+    
+    var recommendations = chocolateCollection().chocolates
+    
     var questions: [Question] = [
-        Question(text: "Pick a chocolate type",
+        Question(text: "Pick a chocolate type", attribute: "type",
                  
                  answers: [
-                    Answer(text: "Dark"),
-                    Answer(text: "Milk"),
-                    Answer(text: "White")
+                    Answer(text: "Dark", value: "dark"),
+                    Answer(text: "Milk", value: "milk"),
+                    Answer(text: "White", value: "milk")
             ]),
-        Question(text: "If you can live anywhere in the world, where would it be?",
+        Question(text: "If you can live anywhere in the world, where would it be?", attribute: "region",
                
                  answers: [
-                    Answer(text: "USA, baby!"),
-                    Answer(text: "Europe"),
-                    Answer(text: "Somewhere more exotic, please"),
+            Answer(text: "USA, baby!", value: "usa"),
+            Answer(text: "Europe", value: "europe"),
+            Answer(text: "Somewhere more exotic, please", value: "exotic"),
             ]),
-        Question(text: "What type of personality are you?",
+        Question(text: "What type of personality are you?", attribute: "personality",
            
                  answers: [
-                    Answer(text: "Sweet"),
-                    Answer(text: "Sassy"),
-                    Answer(text: "Salty"),
+                    Answer(text: "Sweet", value: "sweet"),
+                    Answer(text: "Sassy", value: "spicy"),
+                    Answer(text: "Salty", value: "salty"),
             ]),
     ]
     
@@ -48,6 +51,7 @@ class QuestionsViewController: UIViewController {
     }
     
     func updateUI() {
+        
         let currentQuestion = questions[questionIndex]
         let currentAnswers = currentQuestion.answers
         
@@ -67,7 +71,6 @@ class QuestionsViewController: UIViewController {
         
         if questionIndex < questions.count {
             updateUI()
-            print("updating ui")
         } else {
             performSegue(withIdentifier: "ResultsSegue", sender: nil)
         }
@@ -83,19 +86,28 @@ class QuestionsViewController: UIViewController {
     
     @IBAction func clickAnswerButton(_ sender: UIButton) {
         let currentAnswers = questions[questionIndex].answers
+        let question = questions[questionIndex]
+        var answer: Answer!
         
         switch sender {
         case answerButton1:
-            answersChosen.append(currentAnswers[0])
+            answer = currentAnswers[0]
         case answerButton2:
-            answersChosen.append(currentAnswers[1])
+            answer = currentAnswers[1]
         case answerButton3:
-            answersChosen.append(currentAnswers[2])
+            answer = currentAnswers[2]
         default:
             break
         }
         
+    
+        recommendations = recommendations.filter { (chocolate) in
+            chocolate.value(forKey: question.attribute) as? String == answer.value
+        }
+        
+        print("making recommendations")
+        print(recommendations)
         nextQuestion()
     }
-        
+
 }

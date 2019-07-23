@@ -10,15 +10,17 @@ import Foundation
 
 class Chocolate: NSObject, Codable {
     
-        var id: Int
-        var type: String?
+        var id: Int? 
+        @objc var type: String?
         var flavor: String?
-        var brand: String?
+        @objc var brand: String?
         var notes: String?
         var about: String?
         var targetUser: String?
         var pricePoint: String?
         var specialFeatures: String?
+    @objc var region: String?
+    @objc var personality: String?
     
     enum CodingKeys : String, CodingKey {
         case id 
@@ -30,6 +32,8 @@ class Chocolate: NSObject, Codable {
         case targetUser = "target_user"
         case pricePoint = "price_point"
         case specialFeatures = "special_features"
+        case region
+        case personality
     }
     
 
