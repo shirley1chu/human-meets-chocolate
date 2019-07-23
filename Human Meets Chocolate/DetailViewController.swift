@@ -32,7 +32,7 @@ class DetailViewController: UIViewController {
         imageView.layer.cornerRadius = 8
         brand.attributedText = varyBoldText(boldText: "Brand: ", regularText: "\(chocolate.brand!)")
         flavor.attributedText = varyBoldText(boldText: "Flavor: ", regularText: "\(chocolate.flavor!)")
-        type.attributedText = varyBoldText(boldText: "Type: ", regularText: "\(chocolate.type!)")
+        type.attributedText = varyBoldText(boldText: "Type: ", regularText: "\(chocolate.type!.capitalized)")
         about.attributedText = varyBoldText(boldText: "I am...\n", regularText: "\(chocolate.about ?? "")")
         about.sizeToFit()
         interests.attributedText = varyBoldText(boldText: "I like...\n", regularText: "Long walks on the beach")
