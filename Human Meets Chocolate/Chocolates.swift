@@ -30,9 +30,11 @@ extension chocolateCollection {
             let jsonDecoder = JSONDecoder()
             do {
                 chocolates = try jsonDecoder.decode([Chocolate].self, from: chocolateData!)
+                
             }
             catch {
                 print("failed to load chocolates")
+                print(error.localizedDescription)
             }
         return chocolates
     }

@@ -23,7 +23,7 @@ class QuestionsViewController: UIViewController {
                  answers: [
                     Answer(text: "Dark", value: "dark"),
                     Answer(text: "Milk", value: "milk"),
-                    Answer(text: "White", value: "milk")
+                    Answer(text: "White", value: "white")
             ]),
         Question(text: "If you can live anywhere in the world, where would it be?", attribute: "region",
                
@@ -79,7 +79,7 @@ class QuestionsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ResultsSegue" {
             let resultsViewController = segue.destination as! ResultsViewController
-            resultsViewController.responses = answersChosen
+            resultsViewController.recommendations = recommendations
         }
     }
     
@@ -100,9 +100,12 @@ class QuestionsViewController: UIViewController {
             break
         }
         
-    
         recommendations = recommendations.filter { (chocolate) in
-            chocolate.value(forKey: question.attribute) as? String == answer.value
+            let attribute = chocolate.value(forKey: question.attribute) as? String
+            print("attribute: \(attribute)")
+            let criteriaMet = attribute!.contains(answer.value)
+            print(criteriaMet)
+            return criteriaMet
         }
         
         print("making recommendations")

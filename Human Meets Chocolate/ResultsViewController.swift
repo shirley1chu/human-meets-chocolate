@@ -10,11 +10,12 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
-    var responses: [Answer]!
+    var recommendations: [Chocolate]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("recommendations for results controller")
+        print(recommendations)
     }
     
 
