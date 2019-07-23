@@ -373,7 +373,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="See your matches!"/>
                                 <connections>
-                                    <segue destination="ABy-9W-4LV" kind="show" id="hZP-Kq-ou5"/>
+                                    <segue destination="ABy-9W-4LV" kind="show" identifier="KolodaSegue" id="hZP-Kq-ou5"/>
                                 </connections>
                             </button>
                         </subviews>

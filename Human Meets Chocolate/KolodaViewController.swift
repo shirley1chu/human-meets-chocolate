@@ -19,6 +19,8 @@ class KolodaViewController: UIViewController {
     let chocolates = chocolateCollection().chocolates
     
     var recommendations: [Chocolate]!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,7 @@ class KolodaViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .always
         
         kolodaView.layer.cornerRadius = 8
+        print("koloda recommendations: \(recommendations)")
     }
     
     

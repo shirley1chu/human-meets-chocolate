@@ -18,5 +18,9 @@ class ResultsViewController: UIViewController {
         print(recommendations)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "KolodaSegue" {
 
+        }
+    }
 }
