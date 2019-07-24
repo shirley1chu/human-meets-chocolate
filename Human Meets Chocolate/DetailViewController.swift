@@ -20,6 +20,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var interests: UILabel!
     @IBOutlet weak var idealMatch: UILabel!
     
+   
     var chocolate: Chocolate!
     var imagetoLoad: UIImage?
     
@@ -57,7 +58,15 @@ class DetailViewController: UIViewController {
         boldTextNS.append(regularTextNS)
         return boldTextNS
     }
-
+    
+    @IBAction func puchaseButtonTapped(_ sender: Any) {
+        
+        let purchaseLink = chocolate.purchaseLink
+        if let url = URL(string: purchaseLink!) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
 }
 
 
