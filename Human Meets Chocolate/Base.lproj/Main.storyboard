@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="IndieFlower-Regular.ttf">
+            <string>IndieFlower</string>
+        </array>
         <array key="Pacifico-Regular.ttf">
             <string>Pacifico-Regular</string>
         </array>
@@ -232,25 +235,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H ♡ C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMd-Mx-1dl">
-                                <rect key="frame" x="52.5" y="60" width="309" height="176"/>
+                                <rect key="frame" x="57" y="60" width="300" height="116.5"/>
                                 <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="100"/>
                                 <color key="textColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human Meets Chocolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb0-L4-cQ1">
-                                <rect key="frame" x="73" y="522" width="268" height="30"/>
+                                <rect key="frame" x="73" y="462.5" width="268" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chocolate-launch-yellow" translatesAutoresizingMaskIntoConstraints="NO" id="yPm-dy-gaN">
-                                <rect key="frame" x="79" y="231" width="256" height="264"/>
+                                <rect key="frame" x="199" y="171.5" width="16" height="264"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="264" id="q04-n4-11X"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C46-8r-X6M">
-                                <rect key="frame" x="159" y="624" width="96" height="56"/>
+                                <rect key="frame" x="159" y="564.5" width="96" height="42"/>
                                 <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="96" id="g9K-vy-eAo"/>
@@ -295,16 +298,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-xm-E0a">
-                                <rect key="frame" x="32" y="255.5" width="350" height="385"/>
+                                <rect key="frame" x="32" y="290.5" width="350" height="315"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="questionsLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXn-Tq-BPV">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="53"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="35"/>
                                         <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="30"/>
                                         <color key="textColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOx-0z-a0k">
-                                        <rect key="frame" x="0.0" y="85" width="350" height="51"/>
+                                        <rect key="frame" x="0.0" y="67" width="350" height="38"/>
                                         <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="22"/>
                                         <state key="normal" title="Button 1">
@@ -315,7 +318,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDG-2W-3JM">
-                                        <rect key="frame" x="0.0" y="168" width="350" height="51"/>
+                                        <rect key="frame" x="0.0" y="137" width="350" height="38"/>
                                         <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="22"/>
                                         <state key="normal" title="Button 2">
@@ -326,7 +329,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUB-D6-Lqb">
-                                        <rect key="frame" x="0.0" y="251" width="350" height="51"/>
+                                        <rect key="frame" x="0.0" y="207" width="350" height="38"/>
                                         <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="22"/>
                                         <state key="normal" title="Button 3">
@@ -337,7 +340,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TD-vs-GjO">
-                                        <rect key="frame" x="0.0" y="334" width="350" height="51"/>
+                                        <rect key="frame" x="0.0" y="277" width="350" height="38"/>
                                         <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="22"/>
                                         <state key="normal" title="I love them all!">
@@ -379,20 +382,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV1-Tf-dPm">
-                                <rect key="frame" x="49" y="144" width="316" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV1-Tf-dPm">
+                                <rect key="frame" x="32" y="109" width="350" height="80"/>
                                 <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="45"/>
                                 <color key="textColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-heart-balloon-64" translatesAutoresizingMaskIntoConstraints="NO" id="ykX-Fq-DQw">
-                                <rect key="frame" x="87" y="249" width="240" height="327"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chocolate-balloon" translatesAutoresizingMaskIntoConstraints="NO" id="ykX-Fq-DQw">
+                                <rect key="frame" x="20" y="229" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="374" id="oRd-wh-Aws"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puv-xv-1iF">
-                                <rect key="frame" x="143" y="685" width="128" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBE-uK-ARr">
+                                <rect key="frame" x="40" y="539" width="80" height="99.5"/>
+                                <string key="text">Swipe or
+press 
+left button 
+to pass</string>
+                                <fontDescription key="fontDescription" name="IndieFlower" family="Indie Flower" pointSize="17"/>
+                                <color key="textColor" red="0.46666666666666667" green="0.36470588235294116" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.46666666666666667" green="0.36470588235294116" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3h-8H-7yK">
+                                <rect key="frame" x="289" y="539" width="85" height="99.5"/>
+                                <string key="text">Swipe or 
+press 
+right button 
+to pass</string>
+                                <fontDescription key="fontDescription" name="IndieFlower" family="Indie Flower" pointSize="17"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.36470588240000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="LL5-oe-gIt">
+                                <rect key="frame" x="40" y="439" width="64" height="64"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="zsJ-Ky-e5s">
+                                <rect key="frame" x="310" y="439" width="64" height="64"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puv-xv-1iF">
+                                <rect key="frame" x="80" y="722" width="254" height="56"/>
                                 <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="25"/>
                                 <state key="normal" title="See your matches!">
@@ -404,8 +433,30 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21437206864356995" green="0.138653963804245" blue="0.085806585848331451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ykX-Fq-DQw" firstAttribute="top" secondItem="cV1-Tf-dPm" secondAttribute="bottom" constant="40" id="22L-LU-LqG"/>
+                            <constraint firstAttribute="trailing" secondItem="n3h-8H-7yK" secondAttribute="trailing" constant="40" id="2Cf-eo-WA5"/>
+                            <constraint firstItem="zsJ-Ky-e5s" firstAttribute="top" secondItem="cV1-Tf-dPm" secondAttribute="bottom" constant="250" id="4O8-83-os7"/>
+                            <constraint firstItem="n3h-8H-7yK" firstAttribute="top" secondItem="zsJ-Ky-e5s" secondAttribute="bottom" constant="36" id="7zI-Gv-aev"/>
+                            <constraint firstItem="H6p-w1-uaf" firstAttribute="trailing" secondItem="zsJ-Ky-e5s" secondAttribute="trailing" constant="40" id="8hA-li-anz"/>
+                            <constraint firstItem="ykX-Fq-DQw" firstAttribute="leading" secondItem="H6p-w1-uaf" secondAttribute="leading" constant="20" id="BAE-f7-Tfk"/>
+                            <constraint firstItem="puv-xv-1iF" firstAttribute="leading" secondItem="H6p-w1-uaf" secondAttribute="leading" constant="80" id="EQA-z9-apf"/>
+                            <constraint firstItem="cV1-Tf-dPm" firstAttribute="top" secondItem="H6p-w1-uaf" secondAttribute="top" constant="65" id="Hqr-rj-TPj"/>
+                            <constraint firstItem="H6p-w1-uaf" firstAttribute="bottom" secondItem="puv-xv-1iF" secondAttribute="bottom" constant="84" id="NkF-sT-UFr"/>
+                            <constraint firstItem="H6p-w1-uaf" firstAttribute="trailing" secondItem="puv-xv-1iF" secondAttribute="trailing" constant="80" id="PBa-Hg-QFb"/>
+                            <constraint firstItem="H6p-w1-uaf" firstAttribute="trailing" secondItem="ykX-Fq-DQw" secondAttribute="trailing" constant="20" id="SJj-6i-qmo"/>
+                            <constraint firstItem="LL5-oe-gIt" firstAttribute="top" secondItem="cV1-Tf-dPm" secondAttribute="bottom" constant="250" id="bN7-Pg-h2g"/>
+                            <constraint firstItem="cV1-Tf-dPm" firstAttribute="leading" secondItem="H6p-w1-uaf" secondAttribute="leading" constant="32" id="iVf-7s-lyX"/>
+                            <constraint firstItem="yBE-uK-ARr" firstAttribute="top" secondItem="LL5-oe-gIt" secondAttribute="bottom" constant="36" id="pW5-cU-maS"/>
+                            <constraint firstItem="LL5-oe-gIt" firstAttribute="leading" secondItem="H6p-w1-uaf" secondAttribute="leading" constant="40" id="rVx-VP-zxt"/>
+                            <constraint firstItem="H6p-w1-uaf" firstAttribute="trailing" secondItem="cV1-Tf-dPm" secondAttribute="trailing" constant="32" id="wZU-Ba-5Qb"/>
+                            <constraint firstItem="yBE-uK-ARr" firstAttribute="leading" secondItem="H6p-w1-uaf" secondAttribute="leading" constant="40" id="zCa-zE-fx6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="H6p-w1-uaf"/>
                     </view>
+                    <connections>
+                        <outlet property="resultsButton" destination="puv-xv-1iF" id="2hJ-l6-8yN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDR-4H-L9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -547,9 +598,11 @@
     <resources>
         <image name="4125770-128" width="128" height="128"/>
         <image name="4125786-128" width="128" height="128"/>
+        <image name="chocolate-balloon" width="512" height="512"/>
         <image name="chocolate-launch-yellow" width="256" height="256"/>
-        <image name="icons8-heart-balloon-64" width="64" height="64"/>
+        <image name="left-arrow" width="64" height="64"/>
         <image name="match-icon-resized" width="25" height="25"/>
+        <image name="right-arrow" width="64" height="64"/>
         <image name="suggested-icon-resized" width="25" height="25"/>
     </resources>
 </document>

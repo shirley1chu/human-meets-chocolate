@@ -10,10 +10,12 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    @IBOutlet weak var resultsButton: UIButton!
     var recommendations: [Chocolate]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultsButton.layer.cornerRadius = 8 
         print("recommendations for results controller")
         print(recommendations)
     }

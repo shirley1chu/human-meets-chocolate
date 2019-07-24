@@ -14,6 +14,7 @@
 		7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */; };
 		7135BCDE22DAD6910020BABC /* ChocolateDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */; };
 		716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 716C5F9622E11228007A2B5A /* crying-gif.gif */; };
+		7177C09C22E8ECA700292288 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7177C09B22E8EBD200292288 /* IndieFlower-Regular.ttf */; };
 		7188489122E66106004BAB91 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188489022E66106004BAB91 /* QuestionsViewController.swift */; };
 		7188489322E66144004BAB91 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188489222E66144004BAB91 /* ResultsViewController.swift */; };
 		7188489522E6662B004BAB91 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188489422E6662B004BAB91 /* QuestionData.swift */; };
@@ -42,6 +43,7 @@
 		7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChocolateDetailPage.xib; sourceTree = "<group>"; };
 		7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateDetailPage.swift; sourceTree = "<group>"; };
 		716C5F9622E11228007A2B5A /* crying-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "crying-gif.gif"; path = "Gifs/crying-gif.gif"; sourceTree = "<group>"; };
+		7177C09B22E8EBD200292288 /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
 		7188489022E66106004BAB91 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		7188489222E66144004BAB91 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		7188489422E6662B004BAB91 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				7118669122DFA944009EA395 /* Match.swift */,
 				7118668F22DFA742009EA395 /* MatchesViewController.swift */,
 				71AC1DBE22D7FA970077311A /* Chocolates.swift */,
+				7177C09B22E8EBD200292288 /* IndieFlower-Regular.ttf */,
 				719673B522D50E5100917428 /* chocolate_data.json */,
 				71AC1DC222D7FB030077311A /* ChocolateCard.swift */,
 				71AC1DC022D7FA9F0077311A /* Chocolate.swift */,
@@ -202,6 +205,7 @@
 				719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */,
 				719673AB22D50E0400917428 /* Assets.xcassets in Resources */,
 				7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */,
+				7177C09C22E8ECA700292288 /* IndieFlower-Regular.ttf in Resources */,
 				719673B622D50E5200917428 /* chocolate_data.json in Resources */,
 				716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */,
 				71DCA16622E2CF9D00B98E39 /* Pacifico-Regular.ttf in Resources */,
