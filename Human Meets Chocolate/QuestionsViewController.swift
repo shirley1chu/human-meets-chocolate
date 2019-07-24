@@ -100,12 +100,14 @@ class QuestionsViewController: UIViewController {
             break
         }
         
+        if sender.tag < 3 {
         recommendations = recommendations.filter { (chocolate) in
             let attribute = chocolate.value(forKey: question.attribute) as? String
             print("attribute: \(attribute)")
             let criteriaMet = attribute!.contains(answer.value)
             print(criteriaMet)
             return criteriaMet
+        }
         }
         
         print("making recommendations")
