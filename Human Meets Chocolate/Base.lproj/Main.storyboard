@@ -294,17 +294,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="questionsLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXn-Tq-BPV">
-                                <rect key="frame" x="32" y="157" width="350" height="53"/>
-                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-xm-E0a">
-                                <rect key="frame" x="32" y="242" width="350" height="300"/>
+                                <rect key="frame" x="32" y="255.5" width="350" height="385"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="questionsLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXn-Tq-BPV">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="53"/>
+                                        <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOx-0z-a0k">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="51"/>
+                                        <rect key="frame" x="0.0" y="85" width="350" height="51"/>
                                         <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="22"/>
                                         <state key="normal" title="Button 1">
@@ -315,7 +315,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDG-2W-3JM">
-                                        <rect key="frame" x="0.0" y="83" width="350" height="51"/>
+                                        <rect key="frame" x="0.0" y="168" width="350" height="51"/>
                                         <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="22"/>
                                         <state key="normal" title="Button 2">
@@ -326,7 +326,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUB-D6-Lqb">
-                                        <rect key="frame" x="0.0" y="166" width="350" height="51"/>
+                                        <rect key="frame" x="0.0" y="251" width="350" height="51"/>
                                         <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="22"/>
                                         <state key="normal" title="Button 3">
@@ -337,7 +337,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TD-vs-GjO">
-                                        <rect key="frame" x="0.0" y="249" width="350" height="51"/>
+                                        <rect key="frame" x="0.0" y="334" width="350" height="51"/>
                                         <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="22"/>
                                         <state key="normal" title="I love them all!">
@@ -353,11 +353,8 @@
                         <color key="backgroundColor" red="0.21437206864356995" green="0.138653963804245" blue="0.085806585848331451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oDD-xm-E0a" firstAttribute="leading" secondItem="muj-bJ-6UH" secondAttribute="leading" constant="32" id="Lr9-n4-zhx"/>
-                            <constraint firstItem="oDD-xm-E0a" firstAttribute="top" secondItem="lXn-Tq-BPV" secondAttribute="bottom" constant="32" id="iGN-bJ-pfp"/>
-                            <constraint firstItem="lXn-Tq-BPV" firstAttribute="top" secondItem="muj-bJ-6UH" secondAttribute="top" constant="113" id="lt2-34-Bcn"/>
-                            <constraint firstItem="lXn-Tq-BPV" firstAttribute="leading" secondItem="muj-bJ-6UH" secondAttribute="leading" constant="32" id="pge-EB-7oQ"/>
+                            <constraint firstItem="oDD-xm-E0a" firstAttribute="centerY" secondItem="dik-bF-GLm" secondAttribute="centerY" id="ot4-W8-sOB"/>
                             <constraint firstItem="muj-bJ-6UH" firstAttribute="trailing" secondItem="oDD-xm-E0a" secondAttribute="trailing" constant="32" id="qcK-XJ-lBf"/>
-                            <constraint firstItem="muj-bJ-6UH" firstAttribute="trailing" secondItem="lXn-Tq-BPV" secondAttribute="trailing" constant="32" id="zZD-SE-H3D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="muj-bJ-6UH"/>
                     </view>
@@ -390,6 +387,13 @@
                                     <segue destination="ABy-9W-4LV" kind="show" identifier="TabSegue" id="fXN-Fe-Epo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV1-Tf-dPm">
+                                <rect key="frame" x="115" y="153" width="127" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="H6p-w1-uaf"/>

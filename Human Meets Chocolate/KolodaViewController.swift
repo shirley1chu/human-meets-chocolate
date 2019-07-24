@@ -34,6 +34,8 @@ class KolodaViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .always
         
         kolodaView.layer.cornerRadius = 8
+        let gif = try? UIImage(gifName: "crying-gif.gif")
+        emptyGifView.setGifImage(gif!)
         print("koloda recommendations: \(recommendations)")
     }
     
@@ -58,11 +60,7 @@ class KolodaViewController: UIViewController {
 extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-//        koloda.resetCurrentCardIndex()
-        //        show 'recommendations empty' page
-        //        might need to use segue
-        let gif = try? UIImage(gifName: "crying-gif.gif")
-        emptyGifView.setGifImage(gif!)
+
     }
     
     
