@@ -14,6 +14,20 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var answerButton1: UIButton!
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
+    @IBOutlet weak var answerButton4: UIButton!
+    
+//    var answerButtons: [UIButton]
+//    init() {
+//        self.answerButton1 = answerButton1
+//        self.answerButton2 = answerButton2
+//        self.answerButton3 = answerButton3
+//        self.answerButton4 = answerButton4
+//    }
+//
+//    var answerButtons: [UIButton] = {
+//        return
+//        [self.answerButton1, self.answerButton2, self.answerButton3, self.answerButton4]
+//    }
     
     var recommendations = chocolateCollection().chocolates
     
@@ -48,6 +62,13 @@ class QuestionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        let answerButtons =
+            [answerButton1, answerButton2, answerButton3, answerButton4]
+        
+        for button in answerButtons {
+            button?.layer.cornerRadius = 8
+        }
+        
     }
     
     func updateUI() {
@@ -114,5 +135,5 @@ class QuestionsViewController: UIViewController {
         print(recommendations)
         nextQuestion()
     }
-
+    
 }
