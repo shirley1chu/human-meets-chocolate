@@ -12,7 +12,8 @@
         "price_point": "$3.99",
         "special_features": "blue bottle coffee, organic, fair trade",
         "region": "usa",
-        "personality": "sweet"
+        "personality": "sweet",
+        "purchase_link": "https://amzn.to/2JYUBq1"
     },
     {
         "id": 2,
@@ -27,7 +28,8 @@
         "price_point": "$3.29",
         "special_features": "contains love poem insde",
         "region": "europe",
-        "personality": "salty"
+        "personality": "salty",
+        "purchase_link": "https://amzn.to/2SA5UZI"
     },
     {
         "id": 3,
@@ -42,11 +44,12 @@
         "price_point": "$3.29",
         "special_features": "good for colds, contains love poem inside!",
         "region": "europe",
-        "personality": "spicy, sweet"
+        "personality": "spicy, sweet",
+        "purchase_link": "https://amzn.to/2SGd4vA"
     },
     {
         "id": 4,
-        "type": "milk",
+        "type": "dark",
         "flavor": "Salted Almond",
         "brand": "Theo's",
         "cacao_percentage": "70%",
@@ -57,7 +60,8 @@
         "price_point": "$3.29",
         "special_features": "organic, fair trade, vegan, gluten free",
         "region": "usa",
-        "personality": "salty"
+        "personality": "salty",
+        "purchase_link": "https://amzn.to/2SCtXHc"
     },
     {
         "id": 5,
@@ -72,11 +76,12 @@
         "price_point": "$7.99",
         "special_features": "microbatch",
         "region": "usa",
-        "personality": "sweet, spicy"
+        "personality": "sweet, spicy",
+        "purchase_link": "https://tcho.com/collections/chocolate-bars/products/makers-series-mango-lassi-70g-bar"
     },
     {
         "id": 6,
-        "type": "milk",
+        "type": "dark",
         "flavor": "Cinnamon Spice",
         "brand": "TCHO",
         "cacao_percentage": "53%",
@@ -87,7 +92,8 @@
         "price_point": "$2.99",
         "special_features": "organic",
         "region": "usa",
-        "personality": "spicy"
+        "personality": "spicy",
+        "purchase_link": "https://amzn.to/2ybSQA8"
     },
     {
         "id": 7,
@@ -102,7 +108,8 @@
         "price_point": "$7.99",
         "special_features": "microbatch",
         "region": "exotic",
-        "personality": "spicy"
+        "personality": "spicy",
+        "purchase_link": "https://tcho.com/collections/chocolate-bars/products/makers-series-grapefruit-ginger-70g-bar"
     },
     {
         "id": 8,
@@ -117,7 +124,8 @@
         "price_point": "$3.99",
         "special_features": "organic, fair trade",
         "region": "usa",
-        "personality": "spicy, sweet"
+        "personality": "spicy, sweet",
+        "purchase_link": "https://tcho.com/collections/chocolate-bars/products/milk-chocolate-snickerdoodle-70g-bar"
     },
     {
         "id": 9,
@@ -132,7 +140,8 @@
         "price_point": "$3.99",
         "special_features": "organic, fair trade",
         "region": "usa",
-        "personality": "salty"
+        "personality": "salty",
+        "purchase_link": "https://tcho.com/collections/chocolate-bars/products/milk-chocolate-pretzel-crunch-70g-bar"
     },
     {
         "id": 10,
@@ -147,7 +156,8 @@
         "price_point": "$3.99",
         "special_features": "organic, fair trade",
         "region": "usa",
-        "personality": "sweet"
+        "personality": "sweet",
+        "purchase_link": "https://tcho.com/collections/chocolate-bars/products/dark-chocolate-banana-nut-70g-bar"
     },
     {
         "id": 11,
@@ -162,6 +172,71 @@
         "price_point": "$3",
         "special_features": "from Japan",
         "region": "exotic",
-        "personality": "sweet, salty"
+        "personality": "sweet, salty",
+        "purchase_link": "https://www.napajapan.com/products/dars-chocolate-salty-lychee"
+    },
+    {
+        "id": 12,
+        "type": "milk",
+        "flavor": "oh my s'mores",
+        "brand": "Chuao",
+        "cacao_percentage": "41%",
+        "notes": "bacon, maple syrup",
+        "origin": "usa",
+        "about": "A splash of sweet maple syrup, a bit of bonfire smoked sea salt and crispy, uncured bacon bites add a new level of luxe in creamy milk chocolate. Baconluxious Chocolate proves, once and for all, that everything is better with bacon.",
+        "target_user": "Smoky and sultry individuals",
+        "price_point": "$6",
+        "special_features": "fair trade, gluten-free",
+        "region": "usa",
+        "personality": "salty",
+        "purchase_link": "https://chuaochocolatier.com/baconluxious-chocolate-bar.html"
+    },
+    {
+        "id": 13,
+        "type": "milk",
+        "flavor": "baconluxious chocolate",
+        "brand": "Chuao",
+        "cacao_percentage": "41%",
+        "notes": "marshmallows, chocolate, cookie",
+        "origin": "usa",
+        "about": "Taste the yumminess of our s’mores chocolate bar! You’ll take your taste buds on a trip down memory lane through crushed honey graham goodness, fluffy mini marshmallows and creamy milk chocolate. The crackling of the campfire. The children’s ooey gooey grins. The sweet smell of toasty marshmallows in the air. Your favorite camping activities as a child come to life with just one scrumptious bite. It’s the easiest way to enjoy indoor s’mores, and it’s guaranteed to make you say “oh my!”",
+        "target_user": "Jack-of-all-trades who are a little bit of everything",
+        "price_point": "$6",
+        "special_features": "fair trade",
+        "region": "usa",
+        "personality": "sweet",
+        "purchase_link": "https://chuaochocolatier.com/oh-my-smores-chocolate-bar.html"
+    },
+    {
+        "id": 14,
+        "type": "dark",
+        "flavor": "honeycomb",
+        "brand": "Chuao",
+        "cacao_percentage": "60%",
+        "notes": "honey",
+        "origin": "usa",
+        "about": "Crunchy bits of golden, caramelized honey embrace deep dark chocolate, like secret lovers meeting on a warm summer night. Sweet and decadent, the Honeycomb bar will charm you… one nibble at a time.\n\nIn the battle of milk chocolate vs. dark chocolate, our Honeycomb Chocolate Bar takes one for the dark chocolate team. We all know the health benefits of dark chocolate, but add that with luscious organic honey and you got yourself a winner",
+        "target_user": "Wholesome souls who are sweet to the core",
+        "price_point": "$6",
+        "special_features": "fair trade, gluten-free",
+        "region": "usa",
+        "personality": "sweet",
+        "purchase_link": "https://amzn.to/32LNNVr"
+    },
+    {
+        "id": 15,
+        "type": "dark",
+        "flavor": "firecracker",
+        "brand": "Chuao",
+        "cacao_percentage": "60%",
+        "notes": "candy, chili",
+        "origin": "usa",
+        "about": "Get ready to stop, drop and savor. Silky dark chocolate, a dash of chipotle and a sprinkling of sea salt come together in a scintillating sizzle until…popping candy explodes for the ultimate SURPRISE! Start a party in your mouth with the Firecracker bar. Welcome to the wild side of chocolate.",
+        "target_user": "Spicy adventurists with a side of sweet",
+        "price_point": "$6",
+        "special_features": "fair trade, gluten-free",
+        "region": "usa",
+        "personality": "sweet, spicy",
+        "purchase_link": "https://chuaochocolatier.com/firecracker-chocolate-bar.html"
     }
 ]

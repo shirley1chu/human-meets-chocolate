@@ -21,6 +21,7 @@ class Chocolate: NSObject, Codable {
         var specialFeatures: String?
     @objc var region: String?
     @objc var personality: String?
+    var purchaseLink: String?
     
     enum CodingKeys : String, CodingKey {
         case id 
@@ -34,6 +35,7 @@ class Chocolate: NSObject, Codable {
         case specialFeatures = "special_features"
         case region
         case personality
+        case purchaseLink = "purchase_link"
     }
     
 

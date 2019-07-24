@@ -43,6 +43,8 @@ class DetailViewController: UIViewController {
         contentView.layer.cornerRadius = 8
         
         self.title = "Profile"
+        
+        print(chocolate.purchaseLink)
         }
     
     func varyBoldText (boldText: String, regularText: String) ->  NSAttributedString {

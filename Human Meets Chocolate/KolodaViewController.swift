@@ -21,7 +21,7 @@ class KolodaViewController: UIViewController {
     var recommendations: [Chocolate]!
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,12 +55,10 @@ class KolodaViewController: UIViewController {
     
 }
 
-
-
 extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-
+        
     }
     
     
@@ -75,7 +73,6 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
-        print("in this function")
         if direction == .left {
             return
         }
@@ -92,7 +89,7 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let chocolateCard = Bundle.main.loadNibNamed("ChocolateCard",
-                                                 owner: self, options: nil)?[0] as? ChocolateCard
+                                                     owner: self, options: nil)?[0] as? ChocolateCard
         chocolateCard?.layer.cornerRadius = 8
         let chocolate = recommendations[index]
         chocolateCard?.chocolate = chocolate
