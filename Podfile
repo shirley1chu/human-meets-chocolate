@@ -12,5 +12,7 @@ target 'HumanMeetsChocolate' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'FirebaseUI/Storage'
 
 end

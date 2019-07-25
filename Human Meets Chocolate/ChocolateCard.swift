@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseStorage
+import FirebaseUI
 
 class ChocolateCard: UIView {
 
@@ -19,7 +21,16 @@ class ChocolateCard: UIView {
     
     var chocolate: Chocolate! {
         didSet{
-            imageView.image = UIImage(named: "\(chocolate.id!)")
+            let storageRef = Storage.storage().reference()
+            let imageRef = storageRef.child("\(chocolate.id!).jpg")
+            imageView.sd_setImage(with: imageRef)
+//            print("imageRef")
+//            print(imageRef)
+//            let url = NSURL(string: imageRef!) as! URL
+//            if let imageData: NSData = NSData(contentsOf: url) {
+//                imageView.image = UIImage(data: imageData as Data)
+//            }
+//            imageView.image = UIImage(named: "\(chocolate.id!)")
             brand.text = "Brand: \(chocolate.brand!)"
             flavor.text = "Flavor: \(chocolate.flavor!)"
             type.text = "Type: \(chocolate.type!.capitalized)"
