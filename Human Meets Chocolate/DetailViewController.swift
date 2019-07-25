@@ -23,9 +23,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var purchaseButton: UIButton!
     
     var chocolate: Chocolate!
-    var imagetoLoad: UIImage?
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +34,7 @@ class DetailViewController: UIViewController {
         type.attributedText = varyBoldText(boldText: "Type: ", regularText: "\(chocolate.type!.capitalized)")
         about.attributedText = varyBoldText(boldText: "I am...\n", regularText: "\(chocolate.about ?? "")")
         about.sizeToFit()
-        interests.attributedText = varyBoldText(boldText: "I like...\n", regularText: "Long walks on the beach")
+        interests.attributedText = varyBoldText(boldText: "I like...\n", regularText: "\( chocolate.notes?.capitalizingFirstLetter() ?? "Long walks on the beach")")
         interests.sizeToFit()
         idealMatch.attributedText = varyBoldText(boldText: "My ideal match is...\n", regularText: "\(chocolate.targetUser ?? "A lovely soul")")
         idealMatch.sizeToFit()
@@ -61,8 +58,7 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func puchaseButtonTapped(_ sender: Any) {
-        
-        let purchaseLink = chocolate.purchaseLink
+        let purchaseLink = chocolate.purchaseLink 
         if let url = URL(string: purchaseLink!) {
             UIApplication.shared.open(url)
         }

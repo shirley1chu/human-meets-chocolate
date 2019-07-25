@@ -13,7 +13,7 @@
         "special_features": "blue bottle coffee, organic, fair trade",
         "region": "usa",
         "personality": "sweet",
-        "purchase_link": "https://amzn.to/2JYUBq1"
+        "purchase_link": "https://amzn.to/2SEaaay"
     },
     {
         "id": 2,
@@ -29,7 +29,7 @@
         "special_features": "contains love poem insde",
         "region": "europe",
         "personality": "salty",
-        "purchase_link": "https://amzn.to/2SA5UZI"
+        "purchase_link": "https://amzn.to/32RJQhW"
     },
     {
         "id": 3,
@@ -178,7 +178,7 @@
     {
         "id": 12,
         "type": "milk",
-        "flavor": "oh my s'mores",
+        "flavor": "Baconluxious Chocolate",
         "brand": "Chuao",
         "cacao_percentage": "41%",
         "notes": "bacon, maple syrup",
@@ -189,12 +189,12 @@
         "special_features": "fair trade, gluten-free",
         "region": "usa",
         "personality": "salty",
-        "purchase_link": "https://chuaochocolatier.com/oh-my-smores-chocolate-bar.html"
+        "purchase_link": "https://chuaochocolatier.com/baconluxious-chocolate-bar.html"
     },
     {
         "id": 13,
         "type": "milk",
-        "flavor": "baconluxious chocolate",
+        "flavor": "Oh My S'mores",
         "brand": "Chuao",
         "cacao_percentage": "41%",
         "notes": "marshmallows, chocolate, cookie",
@@ -205,12 +205,12 @@
         "special_features": "fair trade",
         "region": "usa",
         "personality": "sweet",
-        "purchase_link": "https://chuaochocolatier.com/baconluxious-chocolate-bar.html"
+        "purchase_link": "https://chuaochocolatier.com/oh-my-smores-chocolate-bar.html"
     },
     {
         "id": 14,
         "type": "dark",
-        "flavor": "honeycomb",
+        "flavor": "Honeycomb",
         "brand": "Chuao",
         "cacao_percentage": "60%",
         "notes": "honey",
@@ -226,7 +226,7 @@
     {
         "id": 15,
         "type": "dark",
-        "flavor": "firecracker",
+        "flavor": "Firecracker",
         "brand": "Chuao",
         "cacao_percentage": "60%",
         "notes": "candy, chili",
