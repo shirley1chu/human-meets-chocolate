@@ -30,7 +30,6 @@
 		719673B622D50E5200917428 /* chocolate_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 719673B522D50E5100917428 /* chocolate_data.json */; };
 		71AC1DBD22D7FA200077311A /* ChocolateCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */; };
 		71AC1DC322D7FB030077311A /* ChocolateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DC222D7FB030077311A /* ChocolateCard.swift */; };
-		71DCA16622E2CF9D00B98E39 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71DCA16522E2CF9A00B98E39 /* Pacifico-Regular.ttf */; };
 		A3D879EDDCE03EFF7FAE73CD /* Pods_HumanMeetsChocolate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +61,6 @@
 		719673B522D50E5100917428 /* chocolate_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chocolate_data.json; sourceTree = "<group>"; };
 		71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChocolateCard.xib; sourceTree = "<group>"; };
 		71AC1DC222D7FB030077311A /* ChocolateCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateCard.swift; sourceTree = "<group>"; };
-		71DCA16522E2CF9A00B98E39 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		B3B61E6BCA2A40286ECDE7D6 /* Pods-HumanMeetsChocolate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanMeetsChocolate.release.xcconfig"; path = "Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +150,6 @@
 				7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */,
 				7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */,
 				7118669722DFCF6C009EA395 /* MatchCell.swift */,
-				71DCA16522E2CF9A00B98E39 /* Pacifico-Regular.ttf */,
 				719673AA22D50E0400917428 /* Assets.xcassets */,
 				716C5F9622E11228007A2B5A /* crying-gif.gif */,
 				719673AC22D50E0400917428 /* LaunchScreen.storyboard */,
@@ -235,7 +232,6 @@
 				7177C0AD22E9659300292288 /* IndieFlower-Regular.ttf in Resources */,
 				719673B622D50E5200917428 /* chocolate_data.json in Resources */,
 				716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */,
-				71DCA16622E2CF9D00B98E39 /* Pacifico-Regular.ttf in Resources */,
 				719673A922D50E0300917428 /* Main.storyboard in Resources */,
 				71AC1DBD22D7FA200077311A /* ChocolateCard.xib in Resources */,
 				7177C0AE22E9659300292288 /* Pacifico-Regular.ttf in Resources */,

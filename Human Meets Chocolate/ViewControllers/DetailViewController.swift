@@ -41,6 +41,7 @@ class DetailViewController: UIViewController {
         
         contentView.layer.cornerRadius = 8
         purchaseButton.layer.cornerRadius = 8
+        purchaseButton.sizeToFit()
         self.title = "Profile"
         
         print(chocolate.purchaseLink)
