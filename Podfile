@@ -11,5 +11,6 @@ target 'HumanMeetsChocolate' do
   pod 'SwiftyGif'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
 
 end

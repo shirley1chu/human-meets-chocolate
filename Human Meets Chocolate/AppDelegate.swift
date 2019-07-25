@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,6 +30,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor: paleYellow]
 //        add firebase
         FirebaseApp.configure()
+        
+        Auth.auth().signInAnonymously() { (authResult, error) in
+            // ...
+            if let error = error {
+                print("Sign in failed:", error.localizedDescription)
+                print(error)
+            } else {
+                let user = authResult?.user
+                let isAnonymous = user?.isAnonymous  // true
+                let uid = user?.uid
+                print ("Signed in with uid:", user!.uid)
+            }
+        }
+        
         return true
     }
 

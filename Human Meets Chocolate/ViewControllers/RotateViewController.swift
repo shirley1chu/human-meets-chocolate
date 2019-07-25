@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RotateViewController: UIViewController {
     
@@ -18,6 +19,20 @@ class RotateViewController: UIViewController {
         enterButton.layer.cornerRadius = 8
         
         rotateImageView.rotate360Degrees()
+        
+        var ref: DocumentReference? = nil
+        let db = Firestore.firestore()
+        ref = db.collection("users").addDocument(data: [
+            "first": "Ada",
+            "last": "Lovelace",
+            "born": 1815
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
     }
 }
 
