@@ -20,29 +20,31 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var interests: UILabel!
     @IBOutlet weak var idealMatch: UILabel!
     
+    @IBOutlet weak var purchaseButton: UIButton!
+    
     var chocolate: Chocolate!
-    var imagetoLoad: UIImage?
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageView.image = UIImage(named: "\(chocolate.id)")
+        imageView.image = UIImage(named: "\(chocolate.id!)")
         imageView.layer.cornerRadius = 8
         brand.attributedText = varyBoldText(boldText: "Brand: ", regularText: "\(chocolate.brand!)")
         flavor.attributedText = varyBoldText(boldText: "Flavor: ", regularText: "\(chocolate.flavor!)")
-        type.attributedText = varyBoldText(boldText: "Type: ", regularText: "\(chocolate.type!)")
+        type.attributedText = varyBoldText(boldText: "Type: ", regularText: "\(chocolate.type!.capitalized)")
         about.attributedText = varyBoldText(boldText: "I am...\n", regularText: "\(chocolate.about ?? "")")
         about.sizeToFit()
-        interests.attributedText = varyBoldText(boldText: "I like...\n", regularText: "Long walks on the beach")
+        interests.attributedText = varyBoldText(boldText: "I like...\n", regularText: "\( chocolate.notes?.capitalizingFirstLetter() ?? "Long walks on the beach")")
         interests.sizeToFit()
         idealMatch.attributedText = varyBoldText(boldText: "My ideal match is...\n", regularText: "\(chocolate.targetUser ?? "A lovely soul")")
         idealMatch.sizeToFit()
         
         contentView.layer.cornerRadius = 8
-        
+        purchaseButton.layer.cornerRadius = 8
+        purchaseButton.sizeToFit()
         self.title = "Profile"
+        
+        print(chocolate.purchaseLink)
         }
     
     func varyBoldText (boldText: String, regularText: String) ->  NSAttributedString {
@@ -55,7 +57,14 @@ class DetailViewController: UIViewController {
         boldTextNS.append(regularTextNS)
         return boldTextNS
     }
-
+    
+    @IBAction func puchaseButtonTapped(_ sender: Any) {
+        let purchaseLink = chocolate.purchaseLink 
+        if let url = URL(string: purchaseLink!) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
 }
 
 

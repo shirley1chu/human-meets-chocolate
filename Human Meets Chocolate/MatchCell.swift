@@ -21,7 +21,7 @@ class MatchCell: UITableViewCell {
             guard let chocolate = chocolate else { return }
             brandLabel.text = chocolate.brand
             flavorLabel.text = chocolate.flavor
-            cellImage.image = UIImage(named: "\(chocolate.id)")
+            cellImage.image = UIImage(named: "\(chocolate.id!)")
         }
     }
     

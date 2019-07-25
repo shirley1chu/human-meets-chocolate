@@ -18,7 +18,9 @@ class KolodaViewController: UIViewController {
     
     let chocolates = chocolateCollection().chocolates
     
-    private let numberOfCards = 3
+    var recommendations: [Chocolate]!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +31,12 @@ class KolodaViewController: UIViewController {
         //        responds to kolodaview events
         kolodaView.delegate = self
         
-        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "left-arrow")
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "left-arrow")
         navigationItem.largeTitleDisplayMode = .always
         
         kolodaView.layer.cornerRadius = 8
+        let gif = try? UIImage(gifName: "crying-gif.gif")
+        emptyGifView.setGifImage(gif!)
+        print("koloda recommendations: \(recommendations)")
     }
     
     
@@ -52,24 +55,17 @@ class KolodaViewController: UIViewController {
     
 }
 
-
-
 extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-//        koloda.resetCurrentCardIndex()
-        //        show 'recommendations empty' page
-        //        might need to use segue
-        let gif = try? UIImage(gifName: "crying-gif.gif")
-        emptyGifView.setGifImage(gif!)
-        print("you have no more recommendations :(")
+        
     }
     
     
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
-            vc.chocolate = chocolates[index]
+            vc.chocolate = recommendations[index]
             navigationController?.pushViewController(vc, animated: true)
         }
         
@@ -77,13 +73,11 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
-        print("in this function")
         if direction == .left {
-            print("left swipe")
             return
         }
         else if direction == .right {
-            MatchesViewController.matches.append(chocolates[index])
+            MatchesViewController.matches.append(recommendations[index])
             let alertController = UIAlertController(title: "Success!", message:
                 "It's a match <3", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -95,18 +89,27 @@ extension KolodaViewController: KolodaViewDelegate, KolodaViewDataSource {
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let chocolateCard = Bundle.main.loadNibNamed("ChocolateCard",
-                                                 owner: self, options: nil)?[0] as? ChocolateCard
+                                                     owner: self, options: nil)?[0] as? ChocolateCard
         chocolateCard?.layer.cornerRadius = 8
-        let chocolate = chocolates[index]
+        let chocolate = recommendations[index]
         chocolateCard?.chocolate = chocolate
         return chocolateCard!
     }
     
     
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
-        return numberOfCards
+        return recommendations.count
     }
     
     
 }
 
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).capitalized + dropFirst()
+    }
+    
+    mutating func capitalize() {
+        self = self.capitalizingFirstLetter()
+    }
+}
