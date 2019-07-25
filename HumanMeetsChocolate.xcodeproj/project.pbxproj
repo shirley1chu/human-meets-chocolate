@@ -7,46 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7118669022DFA742009EA395 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118668F22DFA742009EA395 /* MatchesViewController.swift */; };
-		7118669222DFA944009EA395 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118669122DFA944009EA395 /* Match.swift */; };
 		7118669822DFCF6C009EA395 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118669722DFCF6C009EA395 /* MatchCell.swift */; };
-		711C5ED622DD0468005F9EA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C5ED522DD0468005F9EA4 /* DetailViewController.swift */; };
 		7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */; };
 		7135BCDE22DAD6910020BABC /* ChocolateDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */; };
 		716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 716C5F9622E11228007A2B5A /* crying-gif.gif */; };
-		7177C09C22E8ECA700292288 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7177C09B22E8EBD200292288 /* IndieFlower-Regular.ttf */; };
-		7188489122E66106004BAB91 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188489022E66106004BAB91 /* QuestionsViewController.swift */; };
-		7188489322E66144004BAB91 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188489222E66144004BAB91 /* ResultsViewController.swift */; };
-		7188489522E6662B004BAB91 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188489422E6662B004BAB91 /* QuestionData.swift */; };
+		7177C0AD22E9659300292288 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7177C09F22E9659200292288 /* IndieFlower-Regular.ttf */; };
+		7177C0AE22E9659300292288 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7177C0A022E9659200292288 /* Pacifico-Regular.ttf */; };
+		7177C0AF22E9659300292288 /* Chocolates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0A222E9659200292288 /* Chocolates.swift */; };
+		7177C0B022E9659300292288 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0A322E9659200292288 /* QuestionData.swift */; };
+		7177C0B122E9659300292288 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0A422E9659200292288 /* Match.swift */; };
+		7177C0B222E9659300292288 /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0A522E9659200292288 /* Chocolate.swift */; };
+		7177C0B322E9659300292288 /* KolodaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0A722E9659200292288 /* KolodaViewController.swift */; };
+		7177C0B422E9659300292288 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0A822E9659200292288 /* MatchesViewController.swift */; };
+		7177C0B522E9659300292288 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0A922E9659200292288 /* QuestionsViewController.swift */; };
+		7177C0B622E9659300292288 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0AA22E9659200292288 /* DetailViewController.swift */; };
+		7177C0B722E9659300292288 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0AB22E9659200292288 /* ResultsViewController.swift */; };
+		7177C0B822E9659300292288 /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177C0AC22E9659200292288 /* RotateViewController.swift */; };
 		719673A422D50E0200917428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719673A322D50E0200917428 /* AppDelegate.swift */; };
 		719673A922D50E0300917428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719673A722D50E0300917428 /* Main.storyboard */; };
 		719673AB22D50E0400917428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719673AA22D50E0400917428 /* Assets.xcassets */; };
 		719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719673AC22D50E0400917428 /* LaunchScreen.storyboard */; };
 		719673B622D50E5200917428 /* chocolate_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 719673B522D50E5100917428 /* chocolate_data.json */; };
-		719673BA22D53D8700917428 /* KolodaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719673B922D53D8700917428 /* KolodaViewController.swift */; };
 		71AC1DBD22D7FA200077311A /* ChocolateCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */; };
-		71AC1DBF22D7FA970077311A /* Chocolates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DBE22D7FA970077311A /* Chocolates.swift */; };
-		71AC1DC122D7FAA00077311A /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DC022D7FA9F0077311A /* Chocolate.swift */; };
 		71AC1DC322D7FB030077311A /* ChocolateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AC1DC222D7FB030077311A /* ChocolateCard.swift */; };
 		71DCA16622E2CF9D00B98E39 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71DCA16522E2CF9A00B98E39 /* Pacifico-Regular.ttf */; };
-		71DCA16822E2DB5600B98E39 /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DCA16722E2DB5600B98E39 /* RotateViewController.swift */; };
 		A3D879EDDCE03EFF7FAE73CD /* Pods_HumanMeetsChocolate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15F1493047D0E2186F592FC8 /* Pods-HumanMeetsChocolate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanMeetsChocolate.debug.xcconfig"; path = "Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate.debug.xcconfig"; sourceTree = "<group>"; };
 		51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanMeetsChocolate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7118668F22DFA742009EA395 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
-		7118669122DFA944009EA395 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		7118669722DFCF6C009EA395 /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
-		711C5ED522DD0468005F9EA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "/Users/shirleychu/Documents/Capstone/Human Meets Chocolate/Human Meets Chocolate/DetailViewController.swift"; sourceTree = "<absolute>"; };
 		7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChocolateDetailPage.xib; sourceTree = "<group>"; };
 		7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateDetailPage.swift; sourceTree = "<group>"; };
 		716C5F9622E11228007A2B5A /* crying-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "crying-gif.gif"; path = "Gifs/crying-gif.gif"; sourceTree = "<group>"; };
-		7177C09B22E8EBD200292288 /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
-		7188489022E66106004BAB91 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
-		7188489222E66144004BAB91 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		7188489422E6662B004BAB91 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		7177C09F22E9659200292288 /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
+		7177C0A022E9659200292288 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		7177C0A222E9659200292288 /* Chocolates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolates.swift; sourceTree = "<group>"; };
+		7177C0A322E9659200292288 /* QuestionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		7177C0A422E9659200292288 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		7177C0A522E9659200292288 /* Chocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
+		7177C0A722E9659200292288 /* KolodaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaViewController.swift; sourceTree = "<group>"; };
+		7177C0A822E9659200292288 /* MatchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		7177C0A922E9659200292288 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		7177C0AA22E9659200292288 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7177C0AB22E9659200292288 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		7177C0AC22E9659200292288 /* RotateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateViewController.swift; sourceTree = "<group>"; };
 		719673A022D50E0200917428 /* HumanMeetsChocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanMeetsChocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719673A322D50E0200917428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719673A822D50E0300917428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,13 +60,9 @@
 		719673AD22D50E0400917428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		719673AF22D50E0400917428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		719673B522D50E5100917428 /* chocolate_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chocolate_data.json; sourceTree = "<group>"; };
-		719673B922D53D8700917428 /* KolodaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KolodaViewController.swift; sourceTree = "<group>"; };
 		71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChocolateCard.xib; sourceTree = "<group>"; };
-		71AC1DBE22D7FA970077311A /* Chocolates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolates.swift; sourceTree = "<group>"; };
-		71AC1DC022D7FA9F0077311A /* Chocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
 		71AC1DC222D7FB030077311A /* ChocolateCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateCard.swift; sourceTree = "<group>"; };
 		71DCA16522E2CF9A00B98E39 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = SOURCE_ROOT; };
-		71DCA16722E2DB5600B98E39 /* RotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateViewController.swift; sourceTree = "<group>"; };
 		B3B61E6BCA2A40286ECDE7D6 /* Pods-HumanMeetsChocolate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanMeetsChocolate.release.xcconfig"; path = "Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7177C09E22E9659100292288 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7177C09F22E9659200292288 /* IndieFlower-Regular.ttf */,
+				7177C0A022E9659200292288 /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7177C0A122E9659200292288 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7177C0A222E9659200292288 /* Chocolates.swift */,
+				7177C0A322E9659200292288 /* QuestionData.swift */,
+				7177C0A422E9659200292288 /* Match.swift */,
+				7177C0A522E9659200292288 /* Chocolate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7177C0A622E9659200292288 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7177C0A722E9659200292288 /* KolodaViewController.swift */,
+				7177C0A822E9659200292288 /* MatchesViewController.swift */,
+				7177C0A922E9659200292288 /* QuestionsViewController.swift */,
+				7177C0AA22E9659200292288 /* DetailViewController.swift */,
+				7177C0AB22E9659200292288 /* ResultsViewController.swift */,
+				7177C0AC22E9659200292288 /* RotateViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		7196739722D50E0200917428 = {
 			isa = PBXGroup;
 			children = (
@@ -106,21 +141,13 @@
 		719673A222D50E0200917428 /* Human Meets Chocolate */ = {
 			isa = PBXGroup;
 			children = (
-				71DCA16722E2DB5600B98E39 /* RotateViewController.swift */,
-				719673B922D53D8700917428 /* KolodaViewController.swift */,
-				711C5ED522DD0468005F9EA4 /* DetailViewController.swift */,
 				719673A322D50E0200917428 /* AppDelegate.swift */,
 				719673A722D50E0300917428 /* Main.storyboard */,
-				7188489422E6662B004BAB91 /* QuestionData.swift */,
-				7188489222E66144004BAB91 /* ResultsViewController.swift */,
-				7188489022E66106004BAB91 /* QuestionsViewController.swift */,
-				7118668F22DFA742009EA395 /* MatchesViewController.swift */,
-				7118669122DFA944009EA395 /* Match.swift */,
-				71AC1DBE22D7FA970077311A /* Chocolates.swift */,
-				7177C09B22E8EBD200292288 /* IndieFlower-Regular.ttf */,
+				7177C09E22E9659100292288 /* Fonts */,
+				7177C0A122E9659200292288 /* Models */,
+				7177C0A622E9659200292288 /* ViewControllers */,
 				719673B522D50E5100917428 /* chocolate_data.json */,
 				71AC1DC222D7FB030077311A /* ChocolateCard.swift */,
-				71AC1DC022D7FA9F0077311A /* Chocolate.swift */,
 				71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */,
 				7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */,
 				7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */,
@@ -205,12 +232,13 @@
 				719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */,
 				719673AB22D50E0400917428 /* Assets.xcassets in Resources */,
 				7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */,
-				7177C09C22E8ECA700292288 /* IndieFlower-Regular.ttf in Resources */,
+				7177C0AD22E9659300292288 /* IndieFlower-Regular.ttf in Resources */,
 				719673B622D50E5200917428 /* chocolate_data.json in Resources */,
 				716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */,
 				71DCA16622E2CF9D00B98E39 /* Pacifico-Regular.ttf in Resources */,
 				719673A922D50E0300917428 /* Main.storyboard in Resources */,
 				71AC1DBD22D7FA200077311A /* ChocolateCard.xib in Resources */,
+				7177C0AE22E9659300292288 /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,20 +291,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71AC1DBF22D7FA970077311A /* Chocolates.swift in Sources */,
-				71AC1DC122D7FAA00077311A /* Chocolate.swift in Sources */,
-				7188489122E66106004BAB91 /* QuestionsViewController.swift in Sources */,
-				7188489522E6662B004BAB91 /* QuestionData.swift in Sources */,
-				71DCA16822E2DB5600B98E39 /* RotateViewController.swift in Sources */,
-				7118669222DFA944009EA395 /* Match.swift in Sources */,
+				7177C0B722E9659300292288 /* ResultsViewController.swift in Sources */,
+				7177C0B422E9659300292288 /* MatchesViewController.swift in Sources */,
+				7177C0B222E9659300292288 /* Chocolate.swift in Sources */,
+				7177C0B322E9659300292288 /* KolodaViewController.swift in Sources */,
+				7177C0B522E9659300292288 /* QuestionsViewController.swift in Sources */,
 				71AC1DC322D7FB030077311A /* ChocolateCard.swift in Sources */,
-				7118669022DFA742009EA395 /* MatchesViewController.swift in Sources */,
-				719673BA22D53D8700917428 /* KolodaViewController.swift in Sources */,
+				7177C0B622E9659300292288 /* DetailViewController.swift in Sources */,
+				7177C0B122E9659300292288 /* Match.swift in Sources */,
 				719673A422D50E0200917428 /* AppDelegate.swift in Sources */,
+				7177C0AF22E9659300292288 /* Chocolates.swift in Sources */,
 				7118669822DFCF6C009EA395 /* MatchCell.swift in Sources */,
-				7188489322E66144004BAB91 /* ResultsViewController.swift in Sources */,
+				7177C0B822E9659300292288 /* RotateViewController.swift in Sources */,
 				7135BCDE22DAD6910020BABC /* ChocolateDetailPage.swift in Sources */,
-				711C5ED622DD0468005F9EA4 /* DetailViewController.swift in Sources */,
+				7177C0B022E9659300292288 /* QuestionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
