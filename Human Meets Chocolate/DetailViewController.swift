@@ -20,7 +20,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var interests: UILabel!
     @IBOutlet weak var idealMatch: UILabel!
     
-   
+    @IBOutlet weak var purchaseButton: UIButton!
+    
     var chocolate: Chocolate!
     var imagetoLoad: UIImage?
     
@@ -42,7 +43,7 @@ class DetailViewController: UIViewController {
         idealMatch.sizeToFit()
         
         contentView.layer.cornerRadius = 8
-        
+        purchaseButton.layer.cornerRadius = 8
         self.title = "Profile"
         
         print(chocolate.purchaseLink)
