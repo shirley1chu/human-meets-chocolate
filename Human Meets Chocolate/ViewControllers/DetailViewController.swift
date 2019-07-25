@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseUI
 
 class DetailViewController: UIViewController {
 
@@ -27,7 +28,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageView.image = UIImage(named: "\(chocolate.id!)")
+        let storageRef = Storage.storage().reference()
+        let imageRef = storageRef.child("\(chocolate.id!).jpg")
+        imageView.sd_setImage(with: imageRef)
         imageView.layer.cornerRadius = 8
         brand.attributedText = varyBoldText(boldText: "Brand: ", regularText: "\(chocolate.brand!)")
         flavor.attributedText = varyBoldText(boldText: "Flavor: ", regularText: "\(chocolate.flavor!)")
@@ -43,8 +46,6 @@ class DetailViewController: UIViewController {
         purchaseButton.layer.cornerRadius = 8
         purchaseButton.sizeToFit()
         self.title = "Profile"
-        
-        print(chocolate.purchaseLink)
         }
     
     func varyBoldText (boldText: String, regularText: String) ->  NSAttributedString {

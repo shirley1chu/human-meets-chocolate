@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseUI
 
 class MatchCell: UITableViewCell {
 
@@ -21,7 +22,9 @@ class MatchCell: UITableViewCell {
             guard let chocolate = chocolate else { return }
             brandLabel.text = chocolate.brand
             flavorLabel.text = chocolate.flavor
-            cellImage.image = UIImage(named: "\(chocolate.id!)")
+            let storageRef = Storage.storage().reference()
+            let imageRef = storageRef.child("\(chocolate.id!).jpg")
+            cellImage.sd_setImage(with: imageRef)
         }
     }
     
