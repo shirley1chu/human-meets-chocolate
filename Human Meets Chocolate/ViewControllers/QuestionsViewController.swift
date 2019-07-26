@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class QuestionsViewController: UIViewController {
 
@@ -16,20 +18,10 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var answerButton3: UIButton!
     @IBOutlet weak var answerButton4: UIButton!
     
-//    var answerButtons: [UIButton]
-//    init() {
-//        self.answerButton1 = answerButton1
-//        self.answerButton2 = answerButton2
-//        self.answerButton3 = answerButton3
-//        self.answerButton4 = answerButton4
-//    }
-//
-//    var answerButtons: [UIButton] = {
-//        return
-//        [self.answerButton1, self.answerButton2, self.answerButton3, self.answerButton4]
-//    }
-    
     var recommendations = chocolateCollection().chocolates
+    let collectionName = "chocolates"
+    let collectionRef = Firestore.firestore().collection("chocolates")
+    var refRecommendations: Any?
     
     var questions: [Question] = [
         Question(text: "Pick a chocolate type", attribute: "type",
@@ -55,7 +47,9 @@ class QuestionsViewController: UIViewController {
             ]),
     ]
     
+    var queryCriteria = [String:Any]()
     var questionIndex = 0
+    let numberOfQuestions = 3
     
     var answersChosen: [Answer] = []
     
@@ -100,15 +94,49 @@ class QuestionsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ResultsSegue" {
             let resultsViewController = segue.destination as! ResultsViewController
+            refRecommendations = refRecommendations ?? collectionRef.getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        print("\(document.documentID) => \(document.data())")
+                    }
+                }
+            }
+            print("in ref recommendations")
+            print(refRecommendations)
+
             resultsViewController.recommendations = recommendations
         }
     }
     
-    
+    func queryFirebase () {
+        
+        if queryCriteria.isEmpty {
+            refRecommendations = collectionRef.getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                                            print("\(document.documentID) => \(document.data())") }
+                    }
+                }
+        }
+        else {
+            for (questionAttribute, answerValue) in queryCriteria {
+                
+            }
+        }
+    }
+
+
     @IBAction func clickAnswerButton(_ sender: UIButton) {
         let currentAnswers = questions[questionIndex].answers
         let question = questions[questionIndex]
         var answer: Answer!
+        
+        let numberOfQuestions = questions.count
+        
         
         switch sender {
         case answerButton1:
@@ -121,14 +149,39 @@ class QuestionsViewController: UIViewController {
             break
         }
         
+        if answer != nil {
+            queryCriteria[question.attribute] = answer.value as Any
+        }
+        
         if sender.tag < 3 {
         recommendations = recommendations.filter { (chocolate) in
             let attribute = chocolate.value(forKey: question.attribute) as? String
             print("attribute: \(attribute)")
+            print("collection ref: \(collectionRef)")
             let criteriaMet = attribute!.contains(answer.value)
             print(criteriaMet)
             return criteriaMet
+            
+        
+            
         }
+            
+            if sender.tag < 3 && questionIndex < numberOfQuestions - 1 {
+                refRecommendations = refRecommendations ?? collectionRef as CollectionReference
+                refRecommendations = refRecommendations.whereField(question.attribute, isEqualTo: answer.value)
+                    .getDocuments() { (querySnapshot, err) in
+                        if let err = err {
+                            print("Error getting documents: \(err)")
+                        } else {
+                            for document in querySnapshot!.documents {
+                                print("\(document.documentID) => \(document.data())")
+                            }
+                        }
+                }
+            }
+            
+            
+            if sender.tag == 1 && questionIndex < numberOfQuestions - 1
         }
         
         print("making recommendations")
@@ -136,4 +189,5 @@ class QuestionsViewController: UIViewController {
         nextQuestion()
     }
     
+}
 }

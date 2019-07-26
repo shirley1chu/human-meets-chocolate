@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7118669822DFCF6C009EA395 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118669722DFCF6C009EA395 /* MatchCell.swift */; };
-		7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */; };
 		7135BCDE22DAD6910020BABC /* ChocolateDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */; };
 		716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 716C5F9622E11228007A2B5A /* crying-gif.gif */; };
 		7177C0AD22E9659300292288 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7177C09F22E9659200292288 /* IndieFlower-Regular.ttf */; };
@@ -38,7 +37,6 @@
 		15F1493047D0E2186F592FC8 /* Pods-HumanMeetsChocolate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanMeetsChocolate.debug.xcconfig"; path = "Target Support Files/Pods-HumanMeetsChocolate/Pods-HumanMeetsChocolate.debug.xcconfig"; sourceTree = "<group>"; };
 		51B3DE45BA185E9A82E86277 /* Pods_HumanMeetsChocolate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanMeetsChocolate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7118669722DFCF6C009EA395 /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
-		7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChocolateDetailPage.xib; sourceTree = "<group>"; };
 		7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateDetailPage.swift; sourceTree = "<group>"; };
 		716C5F9622E11228007A2B5A /* crying-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "crying-gif.gif"; path = "Gifs/crying-gif.gif"; sourceTree = "<group>"; };
 		7177C09F22E9659200292288 /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 				71AC1DC222D7FB030077311A /* ChocolateCard.swift */,
 				71AC1DBC22D7FA1F0077311A /* ChocolateCard.xib */,
 				71DCA15D22E266F200B98E39 /* GoogleService-Info.plist */,
-				7135BCDB22DAD61E0020BABC /* ChocolateDetailPage.xib */,
 				7135BCDD22DAD6910020BABC /* ChocolateDetailPage.swift */,
 				7118669722DFCF6C009EA395 /* MatchCell.swift */,
 				719673AA22D50E0400917428 /* Assets.xcassets */,
@@ -232,7 +229,6 @@
 				719673AE22D50E0400917428 /* LaunchScreen.storyboard in Resources */,
 				71DCA15E22E266F200B98E39 /* GoogleService-Info.plist in Resources */,
 				719673AB22D50E0400917428 /* Assets.xcassets in Resources */,
-				7135BCDC22DAD61E0020BABC /* ChocolateDetailPage.xib in Resources */,
 				7177C0AD22E9659300292288 /* IndieFlower-Regular.ttf in Resources */,
 				719673B622D50E5200917428 /* chocolate_data.json in Resources */,
 				716C5F9722E11229007A2B5A /* crying-gif.gif in Resources */,
