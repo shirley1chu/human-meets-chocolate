@@ -123,9 +123,11 @@ class QuestionsViewController: UIViewController {
                 }
         }
         else {
+            refRecommendations = collectionRef as CollectionReference
             for (questionAttribute, answerValue) in queryCriteria {
-                
+                refRecommendations = refRecommendations.whereField(questionAttribute, isEqualTo: answerValue) as QuerySnapshot
             }
+            refRecommendations.getDocuments()
         }
     }
 
@@ -136,7 +138,6 @@ class QuestionsViewController: UIViewController {
         var answer: Answer!
         
         let numberOfQuestions = questions.count
-        
         
         switch sender {
         case answerButton1:
@@ -167,16 +168,8 @@ class QuestionsViewController: UIViewController {
         }
             
             if sender.tag < 3 && questionIndex < numberOfQuestions - 1 {
-                refRecommendations = refRecommendations ?? collectionRef as CollectionReference
                 refRecommendations = refRecommendations.whereField(question.attribute, isEqualTo: answer.value)
-                    .getDocuments() { (querySnapshot, err) in
-                        if let err = err {
-                            print("Error getting documents: \(err)")
-                        } else {
-                            for document in querySnapshot!.documents {
-                                print("\(document.documentID) => \(document.data())")
-                            }
-                        }
+                
                 }
             }
             
