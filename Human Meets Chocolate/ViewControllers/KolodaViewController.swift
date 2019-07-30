@@ -36,7 +36,7 @@ class KolodaViewController: UIViewController {
         kolodaView.layer.cornerRadius = 8
         let gif = try? UIImage(gifName: "crying-gif.gif")
         emptyGifView.setGifImage(gif!)
-        print("koloda recommendations: \(recommendations)")
+//        print("koloda recommendations: \(recommendations)")
     }
     
     

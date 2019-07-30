@@ -44,7 +44,7 @@ class DetailViewController: UIViewController {
         purchaseButton.sizeToFit()
         self.title = "Profile"
         
-        print(chocolate.purchaseLink)
+//        print(chocolate.purchaseLink)
         }
     
     func varyBoldText (boldText: String, regularText: String) ->  NSAttributedString {

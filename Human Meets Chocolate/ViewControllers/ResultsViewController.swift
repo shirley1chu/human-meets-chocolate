@@ -16,8 +16,8 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         resultsButton.layer.cornerRadius = 8 
-        print("recommendations for results controller")
-        print(recommendations)
+//        print("recommendations for results controller")
+//        print(recommendations)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -87,7 +87,7 @@ class QuestionsViewController: UIViewController {
     }
     
     func nextQuestion() {
-        print("in next question")
+//        print("in next question")
         questionIndex += 1
         
         if questionIndex < questions.count {
@@ -124,15 +124,15 @@ class QuestionsViewController: UIViewController {
         if sender.tag < 3 {
         recommendations = recommendations.filter { (chocolate) in
             let attribute = chocolate.value(forKey: question.attribute) as? String
-            print("attribute: \(attribute)")
+//            print("attribute: \(attribute)")
             let criteriaMet = attribute!.contains(answer.value)
-            print(criteriaMet)
+//            print(criteriaMet)
             return criteriaMet
         }
         }
         
-        print("making recommendations")
-        print(recommendations)
+//        print("making recommendations")
+//        print(recommendations)
         nextQuestion()
     }
     
