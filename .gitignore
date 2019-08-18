@@ -1,0 +1,6 @@
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch Human\ Meets\ Chocolate/GoogleService-Info.plist" \
+  --prune-empty --tag-name-filter cat -- --all
+
+
+echo "GoogleService-Info.plist" >> .gitignoreGoogleService-Info.plist
