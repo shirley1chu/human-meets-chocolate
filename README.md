@@ -14,7 +14,7 @@ Stuck in a chocolate rut? Behold! An iOS app that offers customized and unique r
 
 - Download Xcode
 - Clone repository
-- Run locally via emulator on Xcode
+- Run locally via emulator on Xcode or download onto phone via cable
 
 ### Demo Video
 [![App Demo Video](http://img.youtube.com/vi/C7UR51bsSNk/0.jpg)](http://www.youtube.com/watch?v=C7UR51bsSNk "Human Meets Chocolate Demo")
